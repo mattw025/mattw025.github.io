@@ -8,7 +8,6 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>Department of History</p>
     <p>Faculty of Arts and Social Sciences</p>
     <p>National University of Singapore</p>
     <p>11 Arts Link, AS1-05-27</p>
