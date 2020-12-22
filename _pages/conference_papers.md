@@ -5,6 +5,9 @@ title: conference papers
 description: 
 nav: true
 ---
+#2019
+**Charles I's execution and the destiny of monarchy in Britain and Europe**, *Monarchy and Modernity since 1500 Conference*, University of Cambridge
+
 # 2018
 **News of the king’s execution: newsbooks, temporality, and the regicide of Charles I**, Society for Renaissance Studies 8th Biennial Conference
 
