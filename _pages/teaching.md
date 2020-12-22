@@ -2,14 +2,10 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: 
+description: Materials for courses you taught. Replace this text with your description.
 nav: true
 ---
 
-# University of Cambridge
-- Seminar classes on topics of time and gender for final-year history undergraduates
-- Seminar classes on research conceptualisation and presentation for postgraduates
+For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
 
-# National University of Singapore
-- Supervisions on writing and critical thinking for first-year undergraduates
-- Lectures and seminar discussions on oral history methodology for undergraduates
+Organize your courses by years, topics, or universities, however you like!

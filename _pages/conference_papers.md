@@ -5,7 +5,7 @@ title: conference papers
 description: 
 nav: true
 ---
-#2019
+# 2019
 **Charles I's execution and the destiny of monarchy in Britain and Europe**, *Monarchy and Modernity since 1500 Conference*, University of Cambridge
 
 # 2018

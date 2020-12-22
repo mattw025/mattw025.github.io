@@ -2,26 +2,28 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Matthias Meng Yan Wong # the website title (if blank, full name will be used instead)
-first_name: Matthias
-middle_name: Meng Yan
-last_name: Wong
-email: myw22@cam.ac.uk
-description: # the ">" symbol means to ignore newlines until "footer_text:"
+title: blank # the website title (if blank, full name will be used instead)
+first_name: You
+middle_name: R.
+last_name: (Long Last) Name
+email: you@example.com
+description: > # the ">" symbol means to ignore newlines until "footer_text:"
+  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
 url:  # the base hostname & protocol for your site
-baseurl: # the subpath of your site, e.g. /blog/
+baseurl: /al-folio # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
 
-navbar_fixed: false
-footer_fixed: false
+navbar_fixed: true
+footer_fixed: true
 # TODO: add layout settings (single page vs. multi-page)
 
 # -----------------------------------------------------------------------------
@@ -38,27 +40,28 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 
 github_username: # your GitHub user name
-twitter_username: EMWmatt # your Twitter handle
+twitter_username: # your Twitter handle
 linkedin_username: # your LinkedIn user name
 scholar_userid: # your Google Scholar ID
-orcid_id: 0000-0001-7574-5451 # your ORCID ID
+orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
-publons_id: 1414772 # your ID on Publons
+publons_id: # your ID on Publons
 research_gate_profile: # your profile on ResearchGate
 blogger_url: # your blogger URL
 keybase_username: # your keybase user name
 
-contact_note: 
+contact_note: >
+  You can even add a little note about which of these is the best way to reach you.
 
-google_analytics: UA-100612241-2 # out your google-analytics code
+google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: # your blog must have a name for it to show up in the nav bar
-blog_description: 
+blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
+blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -66,7 +69,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: # put your disqus shortname
+disqus_shortname: al-folio # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -76,10 +79,10 @@ collections:
   news:
     defaults:
       layout: post
-    output: false
+    output: true
     permalink: /news/:path/
   projects:
-    output: false
+    output: true
     permalink: /projects/:path/
 
 news_limit: 5
@@ -125,7 +128,7 @@ scholar:
 
   last_name: Einstein
 
-  style: chicago-fullnote-bibliography
+  style: apa
   locale: en
 
   source: /_bibliography/
@@ -145,7 +148,7 @@ scholar:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics:  true
+enable_google_analytics:  false
 enable_mansory:           true
 enable_math:              true
 enable_tooltips:          false
