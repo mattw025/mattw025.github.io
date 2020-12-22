@@ -2,12 +2,13 @@
 layout: about
 title: about
 permalink: /
-description: 
+description: <a href="https://fass.nus.edu.sg/hist/people/matthias-wong/">Senior Tutor, Department of History at the National University of Singapore</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   address: >
+    <p>Department of History</p>
     <p>Faculty of Arts and Social Sciences</p>
     <p>National University of Singapore</p>
     <p>11 Arts Link, AS1-05-27</p>
