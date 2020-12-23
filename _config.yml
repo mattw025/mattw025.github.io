@@ -123,13 +123,33 @@ plugins:
 
 scholar:
 
-  last_name: Einstein
+  last_name: Wong
 
   style: chicago-fullnote-bibliography
   locale: en
 
   source: /_bibliography/
-  bibliography: papers.bib
+  bibliography: publications.bib
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+
+scholar:
+
+  last_name: Wong
+
+  style: chicago-fullnote-bibliography
+  locale: en
+
+  source: /_bibliography/
+  bibliography: conference_papers.bib
   bibliography_template: bib
 
   replace_strings: true
