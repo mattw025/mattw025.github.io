@@ -114,7 +114,6 @@ plugins:
   - jekyll/scholar
   - jekyll-twitter-plugin
   - jemoji
-  - Nokogiri
   # - bootstrap
   # - material-sass
 
