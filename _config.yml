@@ -103,7 +103,7 @@ kramdown:
       start_line:           1
 
 # Includes & excludes
-include:                    ['_pages', reveal.js]
+include:                    ['_pages']
 exclude:                    [vendor]
 
 # Plug-ins
