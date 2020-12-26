@@ -115,7 +115,6 @@ plugins:
   - jekyll-twitter-plugin
   - jemoji
   - Nokogiri
-  - revealify.rb
   # - bootstrap
   # - material-sass
 
