@@ -29,7 +29,7 @@ Params:
 
   # mdTagline can be used instead to specify the tagline in Markdown for more customizability.
   #   Note that {cursor} is a placeholder and will be replaced by the actual cursor HTML when rendering.
-  mdTagline: "# Matthias Meng Yan Wong"
+  mdTagline: "# Matthias Meng Yan Wong, PhD"
   favicon: "world.png"
 
   opengraphImage: "/images/osprey-delight.png"
