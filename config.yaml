@@ -13,7 +13,7 @@ pygmentsUseClasses: true
 ## Generic theme parameters:
 Params:
   author: "Matthias Meng Yan Wong, PhD"
-  description: "Historian"
+  description: "Environmental and digital humanities PDRA at Treatied Spaces, prev. early modern regicide, trauma and temporal narratives of war"
 
   # logoBig appears at the top of the page. Use a path relative to the assets dir for auto-resizing. 
   logoBig: "token_2.png"
