@@ -3,6 +3,7 @@ baseURL: "https://mattwong.co.uk"
 languageCode: "en-US"
 theme: "osprey-delight"
 tags: ["personal", "homepage", "portfolio"]
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 #canonifyURLS: true
 #googleAnalytics: ""
 disableKinds: ["taxonomy", "taxonomyTerm"]
