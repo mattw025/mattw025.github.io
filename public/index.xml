@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matthias Meng Yan Wong</title>
+    <link>https://mattwong.co.uk/</link>
+    <description>Recent content on Matthias Meng Yan Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 18 Sep 2019 21:57:17 -0700</lastBuildDate><atom:link href="https://mattwong.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meaning-Making</title>
+      <link>https://mattwong.co.uk/gallery/meaning-making/</link>
+      <pubDate>Wed, 18 Sep 2019 21:57:17 -0700</pubDate>
+      
+      <guid>https://mattwong.co.uk/gallery/meaning-making/</guid>
+      <description>Using historical sources, I excavate the mental worlds of the past across a wide range of time.
+Early modern temporality: In my PhD dissertation &amp;lsquo;The impact of the regicide of Charles I on contemporary English notions of time and the future&amp;rsquo; at the University of Cambridge, I examined the execution of King Charles I in 1649 as a moment of ideational change and adaptation. Taking a diachronic approach to periodicals like almanacs and newsbooks, I traced how ideas of time and the future evolved in response to unexpected political change.</description>
+    </item>
+    
+    <item>
+      <title>Digital Humanities</title>
+      <link>https://mattwong.co.uk/gallery/digital-humanities/</link>
+      <pubDate>Fri, 12 May 2017 22:25:02 -0700</pubDate>
+      
+      <guid>https://mattwong.co.uk/gallery/digital-humanities/</guid>
+      <description>Historical GIS: I work mainly with historical geographical information systems (GIS), georeferencing and performing data capture on historic maps to create a digital interactive &amp;lsquo;kinetic map&amp;rsquo;. This sequential, dynamic and interactive animation will reveals how the treaty process drove the transformation of the Northeast American political and intercultural landscape over 230 years.
+Machine learning maps: I lead a collaborative project with the Alan Turing Institute to explore how we can use machine learning to automatically recognise text on pre-20th century colonial maps.</description>
+    </item>
+    
+    <item>
+      <title>Environmental Humanities</title>
+      <link>https://mattwong.co.uk/gallery/environmental-humanities/</link>
+      <pubDate>Mon, 15 May 2017 20:00:16 -0700</pubDate>
+      
+      <guid>https://mattwong.co.uk/gallery/environmental-humanities/</guid>
+      <description>Indigenous environmental research: I am Associate Editor of Cambridge Elements in Indigenous Environmental Research. It offers state-of-the-art interdisciplinary analyses within the rapidly growing area of Indigenous environmental research, and is aimed at researchers, policy-makers and NGOs. The series investigates how environmental issues and processes relate to Indigenous socio-economic, cultural and political dynamics. We invite submissions on topics like traditional ecological knowledge, resource management, food systems, and more. More details on the Series page.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://mattwong.co.uk/about/</link>
+      <pubDate>Sun, 20 Mar 2022 17:39:21 -0700</pubDate>
+      
+      <guid>https://mattwong.co.uk/about/</guid>
+      <description>I am a historian working in the public environmental humanities, an interdisciplinary field that links closely with debates within law, politics, and Indigenous history. I am currently a digital humanities postdoctoral reseacher at the Treatied Spaces Research Group, where I work with King’s Digital Lab and The Alan Turing Institute to develop a range of innovative and interactive digital projects that utilise historical maps and documents to communicate original research in a new and accessible manner.</description>
+    </item>
+    
+    <item>
+      <title>Papers</title>
+      <link>https://mattwong.co.uk/papers/</link>
+      <pubDate>Sun, 20 Mar 2022 17:39:21 -0700</pubDate>
+      
+      <guid>https://mattwong.co.uk/papers/</guid>
+      <description>Peer Reviewed PublicationsMYM Wong. (2021). A pause in time: history writers and the regicide of Charles I. Historical Research 94, 758-781. https://doi.org/10.1093/hisres/htab029
+MYM Wong. (2021). Using Correspondence and Manuscripts in Literary Archives. In Research Methods for Primary Sources, SAGE/Adam Matthew. https://doi.org/10.47594/rmps_0098
+MYM Wong. (2021). Using Newspapers as Historical Sources. In Research Methods for Primary Sources, SAGE/Adam Matthew. https://doi.org/10.47594/rmps_0105
+DissertationMYM Wong. (2019). The impact of the regicide of Charles I on contemporary English notions of time and the future.</description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://mattwong.co.uk/teaching/</link>
+      <pubDate>Sun, 20 Mar 2022 17:39:21 -0700</pubDate>
+      
+      <guid>https://mattwong.co.uk/teaching/</guid>
+      <description>University of CambridgeUndergraduates: Seminar classes on the topics of temporality and gender for final-year history undergraduates.
+Postgraduates: Seminar classes and workshops on research conceptualisation and presentation for postgraduates.
+National University of SingaporeUndergraduates: Supervisions and tutorials on writing and critical thinking, historical source criticism for first-year undergraduates. Lectures and seminar discussions on oral history methodology.
+University of HullGraduate interns: bespoke training tailored to interns’ self-identified learning and development goals, topics included: digital graphics (Inkscape, Adobe Illustrator, Canva), digital storytelling and data visualizations (Flourish, Datawrapper, MS Sway, Shorthand), productivity tools (MS Teams, MS Planner), research tools and reference management (Zotero, Endnote), career development (cover letters, job interviews).</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://mattwong.co.uk/test/</link>
+      <pubDate>Tue, 27 Jun 2017 17:39:21 -0700</pubDate>
+      
+      <guid>https://mattwong.co.uk/test/</guid>
+      <description>Querty</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://mattwong.co.uk/contact/</link>
+      <pubDate>Tue, 27 Jun 2017 17:39:21 -0700</pubDate>
+      
+      <guid>https://mattwong.co.uk/contact/</guid>
+      <description>Email: matthias.wong &amp;lsquo;at&amp;rsquo; hull.ac.uk
+You can also find me on Twitter at EMWmatt</description>
+    </item>
+    
+  </channel>
+</rss>
