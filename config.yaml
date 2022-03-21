@@ -32,7 +32,7 @@ Params:
   mdTagline: "# Matthias Meng Yan Wong, PhD"
   favicon: "world.png"
 
-  # opengraphImage: "/images/osprey-delight.png"
+  opengraphImage: "token_2.png"
 
   # enforceSinglePage will enforce redirection to the baseURL for all sub-directories/-pages.
   #   Example: If you create about.md, Hugo will also create a '/about/index.html'. This file will contain only a redirect directive if this switch is enabled.
