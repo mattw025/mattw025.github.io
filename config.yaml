@@ -102,20 +102,13 @@ Menu:
       url: "/#research"
       weight: 2
     - name: "Papers"
-      url: "papers"
+      identifier: papers
+      url: "/#papers"
       weight: 3
     - name: "Teaching"
-      url: "teaching"
+      identifier: teaching
+      url: "/#teaching"
       weight: 3
-    # - name: "Contact"
-    #   identifier: blog
-    #   url: "/#contact"
-    #   weight: 4
-    # Use icon here to back reference an external site:
-    # - pre: "<i class='icon icon-link-ext'></i>&nbsp;"
-    #   name: ""
-    #   url: "https://pyotek.dev"
-    #   weight: 5
 
 markup:
   goldmark:
