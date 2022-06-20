@@ -105,10 +105,10 @@ Menu:
       identifier: papers
       url: "/#papers"
       weight: 3
-    - name: "Teaching"
-      identifier: teaching
-      url: "/#teaching"
-      weight: 3
+    - name: "KE"
+      identifier: knowledge_exchange
+      url: "/#knowledge_exchange"
+      weight: 4
 
 markup:
   goldmark:

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Matthias Meng Yan Wong</title>
+    <title>Matthias Meng Yan Wong, PhD</title>
     <link>https://mattwong.co.uk/</link>
-    <description>Recent content on Matthias Meng Yan Wong</description>
+    <description>Recent content on Matthias Meng Yan Wong, PhD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 18 Sep 2019 21:57:17 -0700</lastBuildDate><atom:link href="https://mattwong.co.uk/index.xml" rel="self" type="application/rss+xml" />
@@ -46,6 +46,18 @@ Machine learning maps: I lead a collaborative project with the Alan Turing Insti
     </item>
     
     <item>
+      <title>Knowledge Exchange</title>
+      <link>https://mattwong.co.uk/ke/</link>
+      <pubDate>Sun, 20 Mar 2022 17:39:21 -0700</pubDate>
+      
+      <guid>https://mattwong.co.uk/ke/</guid>
+      <description>University of CambridgeUndergraduates: Seminar classes on the topics of temporality and gender for final-year history undergraduates.
+Postgraduates: Seminar classes and workshops on research conceptualisation and presentation for postgraduates.
+National University of SingaporeUndergraduates: Supervisions and tutorials on writing and critical thinking, historical source criticism for first-year undergraduates. Lectures and seminar discussions on oral history methodology.
+University of HullGraduate interns: bespoke training tailored to interns’ self-identified learning and development goals, topics included: digital graphics (Inkscape, Adobe Illustrator, Canva), digital storytelling and data visualizations (Flourish, Datawrapper, MS Sway, Shorthand), productivity tools (MS Teams, MS Planner), research tools and reference management (Zotero, Endnote), career development (cover letters, job interviews).</description>
+    </item>
+    
+    <item>
       <title>Papers</title>
       <link>https://mattwong.co.uk/papers/</link>
       <pubDate>Sun, 20 Mar 2022 17:39:21 -0700</pubDate>
@@ -67,25 +79,6 @@ MYM Wong. (2021). Using Newspapers as Historical Sources. In Research Methods fo
 Postgraduates: Seminar classes and workshops on research conceptualisation and presentation for postgraduates.
 National University of SingaporeUndergraduates: Supervisions and tutorials on writing and critical thinking, historical source criticism for first-year undergraduates. Lectures and seminar discussions on oral history methodology.
 University of HullGraduate interns: bespoke training tailored to interns’ self-identified learning and development goals, topics included: digital graphics (Inkscape, Adobe Illustrator, Canva), digital storytelling and data visualizations (Flourish, Datawrapper, MS Sway, Shorthand), productivity tools (MS Teams, MS Planner), research tools and reference management (Zotero, Endnote), career development (cover letters, job interviews).</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://mattwong.co.uk/test/</link>
-      <pubDate>Tue, 27 Jun 2017 17:39:21 -0700</pubDate>
-      
-      <guid>https://mattwong.co.uk/test/</guid>
-      <description>Querty</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://mattwong.co.uk/contact/</link>
-      <pubDate>Tue, 27 Jun 2017 17:39:21 -0700</pubDate>
-      
-      <guid>https://mattwong.co.uk/contact/</guid>
-      <description>Email: matthias.wong &amp;lsquo;at&amp;rsquo; hull.ac.uk
-You can also find me on Twitter at EMWmatt</description>
     </item>
     
   </channel>
