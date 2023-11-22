@@ -13,6 +13,6 @@ As a public historian, I work with museum partners including the [American Museu
 
 At the National University of Singapore, I teach courses in the fields of European and public history. I am Associate Editor of [*Elements in Indigenous Environmental Research*](https://www.cambridge.org/eier), published by Cambridge University Press. I am an Associate Fellow of the [Higher Education Academy](https://www.advance-he.ac.uk) (AFHEA), an Associate Fellow of the [Royal Historical Society](https://royalhistsoc.org), and a Member of the [AHRC Peer Review College](https://www.ukri.org/councils/ahrc/guidance-for-reviewers/peer-review-college). 
 
-Reach me via [email](mailto:matthias.wong@hull.ac.uk), find me on [Twitter](https://twitter.com/EMWmatt), and view my [ORCID](https://orcid.org/0000-0001-7574-5451) profile.
+Reach me via [email](mailto:matthias.wong@nus.edu.sg), find me on [Twitter](https://twitter.com/EMWmatt), and view my [ORCID](https://orcid.org/0000-0001-7574-5451) profile.
 
 
