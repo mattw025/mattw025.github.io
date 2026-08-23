@@ -1,10 +1,8 @@
-
 ---
 alt: Public and Environmental Histories
-
-color: '#09B365'
-date: "2017-05-15T20:00:16-07:00"
+color: '#637247'
 image: env-hum.png
+imageDecorative: true
 title: Public and Environmental Histories
 weight: 30
 ---

@@ -276,16 +276,47 @@ main > section:nth-child(even) {
 }
 
 .research-card__image {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  min-height: 12rem;
+  background: var(--card-accent, var(--site-accent));
+}
+
+.research-card__image::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.24), transparent 30%),
+    linear-gradient(145deg, transparent 55%, rgba(0, 0, 0, 0.13));
+}
+
+.research-card__image::after {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  content: attr(data-research-index);
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.research-card__image picture {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 11rem;
-  background: #f3efe8;
 }
 
 .research-card__image img {
   width: auto;
-  max-height: 8rem;
+  max-height: 7.75rem;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.14));
 }
 
 .research-card__content {

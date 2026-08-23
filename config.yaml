@@ -81,7 +81,7 @@ menu:
       identifier: "publications"
       url: "/#publications"
       weight: 30
-    - name: "Projects & Engagement"
+    - name: "Engagement"
       identifier: "projects"
       url: "/#projects"
       weight: 40

@@ -1,5 +1,4 @@
 ---
-date: "2022-03-20T17:39:21-07:00"
 draft: false
 title: About
 ---

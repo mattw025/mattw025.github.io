@@ -1,9 +1,8 @@
 ---
 alt: Historical Maps and Digital Methods
-
-color: '#09BD9D'
-date: "2017-05-12T22:25:02-07:00"
+color: '#2F6B68'
 image: computer2.png
+imageDecorative: true
 title: Historical Maps and Digital Methods
 weight: 20
 ---

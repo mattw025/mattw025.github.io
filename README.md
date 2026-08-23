@@ -54,6 +54,12 @@ configured to produce portable Markdown rather than a parallel HTML source.
 
 The home-page order and navigation labels are defined in `config.yaml`.
 
+Each research card takes its image, accent colour, alternative text, and order
+from the corresponding file in `content/gallery/`. The current line drawings
+are decorative, so `imageDecorative: true` keeps them out of the accessibility
+tree. If a project photograph or historical source image replaces one, remove
+that setting and provide concise descriptive text in `alt`.
+
 ## Build and validation
 
 Build the publication version locally:

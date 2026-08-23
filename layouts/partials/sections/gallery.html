@@ -4,14 +4,17 @@
     <p>How people understand time, place and disruption, from seventeenth-century print culture to historical maps and public exhibitions.</p>
   </div>
   <div class="research-grid">
-    {{ range sort (where site.RegularPages "Section" "gallery") "Weight" }}
-      <article class="research-card" id="{{ .File.BaseFileName }}">
-        <div class="research-card__image" {{ with .Params.color }}style="--card-accent: {{ . }}"{{ end }}>
-          {{ partial "sections/gallery/img" . }}
+    {{ range $index, $page := sort (where site.RegularPages "Section" "gallery") "Weight" }}
+      <article class="research-card" id="{{ $page.File.BaseFileName }}">
+        <div class="research-card__image"
+          data-research-index="{{ printf "%02d" (add $index 1) }}"
+          {{ with $page.Params.color }}style="--card-accent: {{ . }}"{{ end }}
+          {{ if $page.Params.imageDecorative }}aria-hidden="true"{{ end }}>
+          {{ partial "sections/gallery/img" $page }}
         </div>
         <div class="research-card__content">
-          <h2>{{ .Title }}</h2>
-          {{ .Content }}
+          <h2>{{ $page.Title }}</h2>
+          {{ $page.Content }}
         </div>
       </article>
     {{ end }}

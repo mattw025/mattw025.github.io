@@ -1,10 +1,8 @@
-
 ---
 alt: Time, Crisis and Political Imagination
-
-color: '#0948B3'
-date: "2019-09-18T21:57:17-07:00"
+color: '#7C3F27'
 image: meaning.png
+imageDecorative: true
 title: Time, Crisis and Political Imagination
 weight: 10
 ---
