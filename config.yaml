@@ -24,7 +24,7 @@ module:
 Params:
   author:
     name: "Matthias Meng Yan Wong, PhD"
-  description: "Environmental and digital humanities PDRA at Treatied Spaces, prev. early modern regicide, trauma and temporal narratives of war"
+  description: "Cultural historian of early modern Europe working across public history, digital humanities and environmental research at NUS"
 
   # Keep the site's existing visual character while using the current theme.
   theme: "origin"
