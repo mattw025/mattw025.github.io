@@ -1,0 +1,8 @@
+{{ $buildOptions := dict "minify" true "target" "es2015" }}
+{{ $scripts := slice (resources.Get "js/src/base.js") (resources.Get "js/src/nav.js") }}
+{{ if .IsHome }}
+  {{ $scripts = $scripts | append (resources.Get "js/src/home.js") }}
+{{ end }}
+{{ $content := ($scripts | resources.Concat "js/site.js" | js.Build $buildOptions).Content }}
+<script>{{ $content | safeJS }}</script>
+{{ partial "icon-data" . }}

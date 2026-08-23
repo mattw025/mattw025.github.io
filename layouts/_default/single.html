@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Locale }}" class="no-js">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "body-top" . }}
+    <main id="main-content">
+      <article class="container standalone-page">
+        <h1>{{ default .Title .Params.heading }}</h1>
+        <div class="entry-content">{{ .Content }}</div>
+      </article>
+    </main>
+    {{ partial "footer.html" . }}
+    {{ partial "body-bottom" . }}
+  </body>
+</html>

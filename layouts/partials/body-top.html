@@ -1,0 +1,57 @@
+{{ if .Site.Params.Feat.googleTagManager }}
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.Feat.googleTagManager }}"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+{{ end }}
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+{{ if .IsHome }}
+  <header class="site-hero row middle-xs center-xs bg lazyload">
+    <div class="site-hero__content col-xs-12">
+      {{ partial "logo-img.html" . }}
+      <h1>{{ .Site.Params.author.displayName }}</h1>
+      <p class="site-hero__role">{{ .Site.Params.hero.role }}</p>
+      <p class="site-hero__institution">{{ .Site.Params.hero.institution }}</p>
+      <p class="site-hero__summary">{{ .Site.Params.hero.summary }}</p>
+      <a class="site-hero__link" href="#research">Explore research</a>
+    </div>
+  </header>
+{{ end }}
+
+<nav class="site-nav row middle-xs center-xs nav-fixed nav-shadow" aria-label="Primary navigation">
+  <div class="col-xs-6 col-sm-1 logo">
+    <a href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Title }} home">
+      {{ partial "lazyimg" (dict
+        "img" (resources.Get .Site.Params.logoSmall)
+        "maxsize" (default "96x" .Site.Params.Image.NavLogo.resize)
+        "lqipsize" "16x"
+        "resizeoptions" "q92 Gaussian"
+        "alt" ""
+        "renderer" "webp"
+        "resizer" "simple"
+        "noscript" false
+      ) }}
+    </a>
+  </div>
+  {{ range .Site.Menus.main }}
+    <div class="col-xs-3 col-sm-2 nav-item">
+      <h3><a href="{{ .URL }}">{{ .Name }}</a></h3>
+    </div>
+  {{ end }}
+  <div class="col-xs-6 col-sm-1 nav-toggle">
+    <button class="nav-icon" type="button" aria-controls="site-menu" aria-expanded="false" aria-label="Open menu">
+      {{ partial "icon" "menu" }}
+    </button>
+  </div>
+</nav>
+
+<section class="nav-full row middle-xs center-xs" id="site-menu" aria-label="Mobile navigation" aria-hidden="true" inert>
+  <div class="col-xs-12">
+    <div class="row middle-xs center-xs">
+      {{ range .Site.Menus.main }}
+        <div class="col-xs-12"><h2><a href="{{ .URL }}">{{ .Name }}</a></h2></div>
+      {{ end }}
+      <div class="col-xs-12"><h2><a href="{{ "/#contact" | relLangURL }}">Contact</a></h2></div>
+    </div>
+  </div>
+</section>
