@@ -6,11 +6,12 @@
   <div class="research-grid">
     {{ range $index, $page := sort (where site.RegularPages "Section" "gallery") "Weight" }}
       <article class="research-card" id="{{ $page.File.BaseFileName }}">
-        <div class="research-card__image"
+        <div class="research-card__image research-card__image--{{ default "icon" $page.Params.imageStyle }}"
           data-research-index="{{ printf "%02d" (add $index 1) }}"
-          {{ with $page.Params.color }}style="--card-accent: {{ . }}"{{ end }}
+          style="{{ with $page.Params.color }}--card-accent: {{ . }};{{ end }}{{ with $page.Params.imagePosition }} --image-position: {{ . }};{{ end }}"
           {{ if $page.Params.imageDecorative }}aria-hidden="true"{{ end }}>
           {{ partial "sections/gallery/img" $page }}
+          {{ with $page.Params.imageCredit }}<span class="research-card__image-credit">{{ . | markdownify }}</span>{{ end }}
         </div>
         <div class="research-card__content">
           <h2>{{ $page.Title }}</h2>

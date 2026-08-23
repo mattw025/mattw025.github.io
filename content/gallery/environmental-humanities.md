@@ -3,6 +3,7 @@ alt: Public and Environmental Histories
 color: '#637247'
 image: env-hum.png
 imageDecorative: true
+imageStyle: icon
 title: Public and Environmental Histories
 weight: 30
 ---

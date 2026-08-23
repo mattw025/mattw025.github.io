@@ -3,6 +3,7 @@ alt: Historical Maps and Digital Methods
 color: '#2F6B68'
 image: computer2.png
 imageDecorative: true
+imageStyle: icon
 title: Historical Maps and Digital Methods
 weight: 20
 ---

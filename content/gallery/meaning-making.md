@@ -3,6 +3,7 @@ alt: Time, Crisis and Political Imagination
 color: '#7C3F27'
 image: meaning.png
 imageDecorative: true
+imageStyle: icon
 title: Time, Crisis and Political Imagination
 weight: 10
 ---

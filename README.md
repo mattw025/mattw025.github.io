@@ -57,8 +57,29 @@ The home-page order and navigation labels are defined in `config.yaml`.
 Each research card takes its image, accent colour, alternative text, and order
 from the corresponding file in `content/gallery/`. The current line drawings
 are decorative, so `imageDecorative: true` keeps them out of the accessibility
-tree. If a project photograph or historical source image replaces one, remove
-that setting and provide concise descriptive text in `alt`.
+tree. Images live in `assets/`, where Hugo can resize and optimise them.
+
+To replace a line drawing with a project photograph or historical source image,
+upload the new file to `assets/` and update the relevant card front matter:
+
+```yaml
+alt: "A concise description of the image"
+image: example-project.jpg
+imageCredit: "Image: collection or photographer, licence if applicable"
+imageDecorative: false
+imagePosition: "center 35%"
+imageStyle: photo
+```
+
+Use a landscape image, ideally 1800 x 1200 pixels (3:2) and at least 1200 x 800
+pixels. JPEG or WebP is best for photographs; PNG is suitable for graphics or
+transparency. Keep the file below about 1 MB where practical, use a lowercase
+hyphenated filename without spaces, and confirm that Matt has permission to use
+it. `imagePosition` is optional: `center` is the default, while values such as
+`center 35%` can keep the important part of the image in view when it is cropped.
+`imageCredit` is also optional, but should be included when attribution is
+required. For a meaningful image, keep `imageDecorative: false` and write useful
+`alt` text; use `true` only when the image adds no information.
 
 ## Build and validation
 
