@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}" class="no-js">
+<html lang="{{ .Site.Language.Locale }}" class="no-js">
   {{ partial "head.html" . }}
   <body>
-    {{ partial "body-top" . }}
+    {{ partial "body-top.html" . }}
     <main>
-
       {{ range $i, $m := .Site.Menus.main -}}
-          {{ $partial := printf "partials/sections/%s.html" $m.Identifier }}
-          {{ if templates.Exists $partial }}
-            <section class="{{ .Identifier }}" id="{{ replace (replace .URL "/" "") "#" "" }}">
-            {{ $page := $m.Page }}
-            {{ if eq $page nil -}}
-              {{ $page = $.Site.GetPage .Identifier }}
-            {{- end }}
-            {{ partial $partial $page }}
-            </section>
-          {{ else if .Page }}
-            <section class="default" id="{{ replace (replace .URL "/" "") "#" "" }}">
-            {{ partial "partials/sections/default.html" $m.Page }}
-            </section>
-          {{- end }}
+        {{ $partialPath := printf "partials/sections/%s.html" $m.Identifier }}
+        {{ $partialName := printf "sections/%s.html" $m.Identifier }}
+        {{ $page := $m.Page }}
+        {{ if not $page -}}
+          {{ $page = $.Site.GetPage $m.Identifier }}
+        {{- end }}
+        {{ if templates.Exists $partialPath }}
+          <section class="{{ .Identifier }}" id="{{ replace (replace .URL "/" "") "#" "" }}">
+            {{ partial $partialName $page }}
+          </section>
+        {{ else if $page }}
+          <section class="default" id="{{ replace (replace .URL "/" "") "#" "" }}">
+            {{ partial "sections/default.html" $page }}
+          </section>
+        {{ else }}
+          {{ warnf "could not find page for menu: %#v\n\tTIP: create one with `hugo new %s`" $m $m.Identifier }}
+        {{- end }}
       {{- end }}
-
     </main>
     {{ partial "footer.html" . }}
-    {{ partial "body-bottom" . }}
+    {{ partial "body-bottom.html" . }}
   </body>
 </html>

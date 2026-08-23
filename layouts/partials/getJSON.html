@@ -1,0 +1,7 @@
+{{/* Osprey Delight compatibility for Hugo versions where getJSON is removed. */}}
+{{ $url := urls.JoinPath . }}
+{{ $result := false }}
+{{ with resources.GetRemote $url }}
+  {{ $result = . | transform.Unmarshal }}
+{{ end }}
+{{ return $result }}

@@ -1,19 +1,33 @@
 title: "Matthias Meng Yan Wong, PhD"
 baseURL: "https://mattwong.co.uk"
-languageCode: "en-US"
-theme: "osprey-delight"
+locale: "en-GB"
 tags: ["personal", "homepage", "portfolio"]
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 #canonifyURLS: true
 #googleAnalytics: ""
-disableKinds: ["taxonomy", "taxonomyTerm"]
+disableKinds: ["taxonomy", "term"]
 enableEmoji: true
-pygmentsUseClasses: true
+
+# Use the pinned theme submodule as a local Hugo Module. We intentionally
+# declare its compatible dependencies here instead of loading the obsolete
+# release-notify dependency bundled in Osprey Delight v5.0.8.
+module:
+  replacements:
+    - github.com/kdevo/osprey-delight/v5 -> osprey-delight
+  imports:
+    - path: github.com/kdevo/osprey-delight/v5
+      ignoreImports: true
+    - path: github.com/hugo-mods/icons
+    - path: github.com/hugo-mods/lazyimg
 
 ## Generic theme parameters:
 Params:
-  author: "Matthias Meng Yan Wong, PhD"
+  author:
+    name: "Matthias Meng Yan Wong, PhD"
   description: "Environmental and digital humanities PDRA at Treatied Spaces, prev. early modern regicide, trauma and temporal narratives of war"
+
+  # Keep the site's existing visual character while using the current theme.
+  theme: "origin"
 
   # logoBig appears at the top of the page. Use a path relative to the assets dir for auto-resizing. 
   logoBig: "token_2.png"
@@ -43,8 +57,10 @@ Params:
 
 ## Social links in footer:
   Social:
-  - type: twitter # the icon to use. can be anything mentioned in "assets/sass/_icons.scss" 
+  - type: fab twitter
     url: "https://twitter.com/EMWmatt"
+  - type: fab orcid
+    url: "https://orcid.org/0000-0001-7574-5451"
   # - type: linkedin 
   #   url: ""
   # - type: github
@@ -57,12 +73,6 @@ Params:
 
 ## Theme features:
   Feat:
-    # useLazySizes to lazy load images with lazysizes (recommended)
-    useLazySizes: true
-
-    # ajaxBasin uses Basin for a functional contact form.
-    ajaxBasin: "https://usebasin.com/f/{YOUR-12-CHAR-FORM-KEY-HERE}"
-
     # useStructuredData for your own https://schema.org/Person (SEO-friendly).
     #   This will be auto-generated dependent on the information you provide in this configuration.
     useStructuredData: false
@@ -73,7 +83,7 @@ Params:
 
     # useTermynal enables Termynal (https://github.com/ines/termynal), a small JS library for showing a terminal "animation" from within your gallery item.
     #   The cool thing is that the library has been stripped-down to a minimum to only have the necessary functionality.
-    useTermynal: true
+    useTermynal: false
 
     googleTagManager: ""
   
@@ -111,6 +121,15 @@ Menu:
       weight: 4
 
 markup:
+  highlight:
+    noClasses: false
   goldmark:
     renderer:
       unsafe: true
+
+# blogdown's HTML output is intentionally accepted as Hugo content. Restrict
+# this to HTML rather than allowing arbitrary content media types.
+security:
+  allowContent:
+    - text/markdown
+    - text/html

@@ -2,7 +2,7 @@
 <meta http-equiv="refresh" content="0; url={{ .Site.BaseURL }}">
 {{- else -}}
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.Language.Locale }}">
   {{ partial "head.html" . }}
   <body>
     {{ partial "body-top" . }}
