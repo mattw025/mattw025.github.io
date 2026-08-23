@@ -5,6 +5,10 @@ disableKinds: ["taxonomy", "term"]
 enableEmoji: true
 enableRobotsTXT: true
 
+# Prevent blogdown from auto-detecting the submodule as a legacy Hugo theme.
+# Osprey Delight is loaded exclusively through the module configuration below.
+theme: []
+
 # Load the pinned theme submodule as a local Hugo Module replacement. The
 # theme's obsolete release-notify import is intentionally excluded.
 module:

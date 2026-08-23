@@ -26,6 +26,14 @@ install.packages("blogdown")
 blogdown::install_hugo(version = "0.165.0", extended = TRUE)
 ```
 
+Hugo Modules also require Go to be visible to the RStudio process. On Windows,
+install Go, close RStudio completely, reopen it, and confirm the installation:
+
+```r
+Sys.which("go")
+system2("go", "version")
+```
+
 Preview the site with:
 
 ```r
@@ -40,7 +48,7 @@ configured to produce portable Markdown rather than a parallel HTML source.
 
 - `content/about.md`: biographical overview;
 - `content/gallery/`: research areas shown as cards on the home page;
-- `content/publications.md`: publications and conference papers;
+- `content/publications.md`: research publications, methods contributions and dissertation;
 - `content/projects.md`: projects and public engagement;
 - `content/teaching.md`: teaching experience.
 
