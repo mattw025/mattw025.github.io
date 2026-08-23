@@ -15,8 +15,8 @@ options(
   blogdown.serve_site.startup = FALSE,
   # to disable knitting Rmd files on save, set this option to FALSE
   blogdown.knit.on_save = TRUE,
-  # build .Rmd to .html (via Pandoc); to build to Markdown, set this option to 'markdown'
-  blogdown.method = "html",
+  # Prefer portable Markdown output if an R Markdown page is added later.
+  blogdown.method = "markdown",
   # keep local preview and Netlify on the same tested Hugo release
   blogdown.hugo.version = "0.165.0"
 )

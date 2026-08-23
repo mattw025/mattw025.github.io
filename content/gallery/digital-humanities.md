@@ -1,11 +1,11 @@
 ---
-alt: Digital Humanities
+alt: Historical Maps and Digital Methods
 
 color: '#09BD9D'
 date: "2017-05-12T22:25:02-07:00"
 image: computer2.png
-title: Digital Humanities
-weight: 10
+title: Historical Maps and Digital Methods
+weight: 20
 ---
 
 **Historical GIS:** I use historical geographical information systems (GIS), georeferencing, and data capture on historic maps. For the *Brightening the Covenant Chain* project, I processed maps of colonial America from the British Library to create a dataset for a digital interactive [Kinetic Map](https://treatiedspaces.com/digital-storytelling/#kinetic-map). The visualisation traces how treaty-making transformed the political and intercultural landscape of northeastern North America over 230 years.
