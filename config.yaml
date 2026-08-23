@@ -1,116 +1,95 @@
-title: "Matthias Meng Yan Wong, PhD"
-baseURL: "https://mattwong.co.uk"
-languageCode: "en-US"
-theme: "osprey-delight"
-tags: ["personal", "homepage", "portfolio"]
-ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
-#canonifyURLS: true
-#googleAnalytics: ""
-disableKinds: ["taxonomy", "taxonomyTerm"]
+title: "Matthias Wong"
+baseURL: "https://mattwong.co.uk/"
+locale: "en-GB"
+disableKinds: ["taxonomy", "term"]
 enableEmoji: true
-pygmentsUseClasses: true
+enableRobotsTXT: true
 
-## Generic theme parameters:
-Params:
-  author: "Matthias Meng Yan Wong, PhD"
-  description: "Environmental and digital humanities PDRA at Treatied Spaces, prev. early modern regicide, trauma and temporal narratives of war"
+# Prevent blogdown from auto-detecting the submodule as a legacy Hugo theme.
+# Osprey Delight is loaded exclusively through the module configuration below.
+theme: []
 
-  # logoBig appears at the top of the page. Use a path relative to the assets dir for auto-resizing. 
+# Load the pinned theme submodule as a local Hugo Module replacement. The
+# theme's obsolete release-notify import is intentionally excluded.
+module:
+  replacements:
+    - github.com/kdevo/osprey-delight/v5 -> osprey-delight
+  imports:
+    - path: github.com/kdevo/osprey-delight/v5
+      ignoreImports: true
+    - path: github.com/hugo-mods/icons
+    - path: github.com/hugo-mods/lazyimg
+
+params:
+  author:
+    name: "Matthias Meng Yan Wong"
+    displayName: "Matthias Wong"
+
+  description: "Matthias Wong is a cultural historian at NUS researching early modern temporality, digital history, Indigenous cultural geography and public history."
+  theme: "origin"
+  themeColor: "#f7f3ee"
+
+  hero:
+    role: "Senior Tutor, Department of History"
+    institution: "National University of Singapore"
+    summary: "Cultural historian of early modern Europe studying time, disruption and contested spaces through print culture, historical maps and public history."
+
   logoBig: "token_2.png"
-
-  # logoSmall is the logo that will be shown in the left corner of the nav bar.
-  #   Use a path relative to the assets dir for auto-resizing.
   logoSmall: "world.png"
-
-  # tagline (followed by a cursor) is shown at the top, below the logo
-  #tagline: "Welcome!"
-
-  background: "dominic-spohr-texture.jpg"
-
-  # mdTagline can be used instead to specify the tagline in Markdown for more customizability.
-  #   Note that {cursor} is a placeholder and will be replaced by the actual cursor HTML when rendering.
-  mdTagline: "# Matthias Meng Yan Wong, PhD"
   favicon: "world.png"
+  opengraphImage: "social-card.png"
 
-  opengraphImage: "Screenshot.jpg"
-
-  # enforceSinglePage will enforce redirection to the baseURL for all sub-directories/-pages.
-  #   Example: If you create about.md, Hugo will also create a '/about/index.html'. This file will contain only a redirect directive if this switch is enabled.
   enforceSinglePage: false
-
-  # copyright flag generates a copyright notice in footer for your site.
   copyright: true
+  credit: true
 
-## Social links in footer:
-  Social:
-  - type: twitter # the icon to use. can be anything mentioned in "assets/sass/_icons.scss" 
-    url: "https://twitter.com/EMWmatt"
-  # - type: linkedin 
-  #   url: ""
-  # - type: github
-  #   url: github = "https://github.com/kdevo/osprey-delight"
-  # - type: stackoverflow  
-  #   url: ""
-  # - type: spotify
-  #   url: https://open.spotify.com/artist/5NhBOdJh6T1tgtM5Au1Opl
+  social:
+    - type: "fab twitter"
+      label: "Twitter"
+      url: "https://twitter.com/EMWmatt"
+    - type: "fab orcid"
+      label: "ORCID"
+      url: "https://orcid.org/0000-0001-7574-5451"
 
-
-## Theme features:
-  Feat:
-    # useLazySizes to lazy load images with lazysizes (recommended)
-    useLazySizes: true
-
-    # ajaxBasin uses Basin for a functional contact form.
-    ajaxBasin: "https://usebasin.com/f/{YOUR-12-CHAR-FORM-KEY-HERE}"
-
-    # useStructuredData for your own https://schema.org/Person (SEO-friendly).
-    #   This will be auto-generated dependent on the information you provide in this configuration.
-    useStructuredData: false
-
-    # structuredDataGitHubUser needs your USERNAME so that the GitHub API is used to fetch more information for structured data.
-    #   This will use information that is publically available about your GitHub user profile at https://api.github.com/users/{USERNAME}.
-    #structuredDataGitHubUser = "USERNAME"
-
-    # useTermynal enables Termynal (https://github.com/ines/termynal), a small JS library for showing a terminal "animation" from within your gallery item.
-    #   The cool thing is that the library has been stripped-down to a minimum to only have the necessary functionality.
-    useTermynal: true
-
+  feat:
+    useStructuredData: true
+    useTermynal: false
     googleTagManager: ""
-  
-  # Expert mode: Configure image resizing (some of the settings are not yet publicly documented)
-  Image:
-    Logo:
+
+  image:
+    logo:
       resize: "300x"
+      resizer: "simple"
+    navLogo:
+      resize: "96x"
+      resizer: "simple"
+    gallery:
+      resize: "600x"
+      resizer: "simple"
 
-    Gallery:
-      resize: "400x"
-
-    # Background:
-    #   resize: "1920x"
-      
-
-## The menu items are automatically added to navbar. Use content files for more advanced usage.
-##   See: https://gohugo.io/content-management/menus/#add-content-to-menus
-Menu:
-  Main:
+menu:
+  main:
     - name: "About"
-      identifier: about # the identifier controls the section type (and therewith the appearence).
+      identifier: "about"
       url: "/#about"
-      weight: 1
+      weight: 10
     - name: "Research"
-      identifier: gallery
+      identifier: "gallery"
       url: "/#research"
-      weight: 2
-    - name: "Papers"
-      identifier: papers
-      url: "/#papers"
-      weight: 3
-    - name: "KE"
-      identifier: knowledge_exchange
-      url: "/#knowledge_exchange"
-      weight: 4
+      weight: 20
+    - name: "Publications"
+      identifier: "publications"
+      url: "/#publications"
+      weight: 30
+    - name: "Engagement"
+      identifier: "projects"
+      url: "/#projects"
+      weight: 40
+    - name: "Teaching"
+      identifier: "teaching"
+      url: "/#teaching"
+      weight: 50
 
 markup:
-  goldmark:
-    renderer:
-      unsafe: true
+  highlight:
+    noClasses: false

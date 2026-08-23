@@ -1,26 +1,22 @@
-<footer>
-  <div class="row center-xs social">
-  {{ range .Site.Params.Social -}}
-    <div class="col-xs-2">
-      <a target="_blank" rel="noopener" href="{{ .url }}"><i class="icon icon-{{ .type }}"></i></a>
-      <a target="_blank" rel="noopener" href="https://orcid.org/0000-0001-7574-5451"><i class="ai ai-orcid ai-2x" style="color:white"></i></a>
-    </div>
-  {{- end }}
-  </div>
-  {{ if (.Site.Params.copyright) -}}
-  <div class="row center-xs">
-    <div class="col-xs">
-      <small>
-      {{ if .Site.Params.copyright }}
-        {{ i18n "copyright" }} &copy; {{ now.Format "2006" }} {{ .Site.Title }}
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:matthias.wong@nus.edu.sg">matthias.wong@nus.edu.sg</a><br>
+      Senior Tutor, Department of History, National University of Singapore
+    </p>
+    <ul class="site-footer__links" aria-label="Professional profiles">
+      <li><a href="https://fass.nus.edu.sg/hist/people/matthias-wong/">NUS profile</a></li>
+      <li><a href="https://discovery.nus.edu.sg/6890-matthias-wong">NUS Discovery</a></li>
+      {{ range .Site.Params.Social }}
+        <li><a href="{{ .url }}" rel="me noopener">{{ .label }}</a></li>
       {{ end }}
-      {{ if or (.Site.Params.credit) (eq (isset .Site.Params "credit") false) -}}
-      <div class="col-xs">
-          <small>Theme: <a href="https://github.com/kdevo/osprey-delight" target="_blank" rel="noopener">Osprey Delight</a></small>
-      </div>
-      {{- end }}
-      </small>
-    </div>
+    </ul>
+    <p class="site-footer__meta">
+      &copy; {{ now.Format "2006" }} {{ .Site.Params.author.displayName }}.
+      {{ if or (.Site.Params.credit) (eq (isset .Site.Params "credit") false) }}
+        Theme: <a href="https://github.com/kdevo/osprey-delight">Osprey Delight</a>.
+      {{ end }}
+    </p>
   </div>
-  {{- end }}
 </footer>

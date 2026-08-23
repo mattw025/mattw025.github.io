@@ -1,65 +1,40 @@
 var menuActive = false
-var navFixed = false
-var nav = $('nav')
-    navToggleAndLogo = $$('nav > .logo, nav > .nav-toggle')
+var navFixed = true
+var nav = document.querySelector('nav')
+var menuButton = document.querySelector('.nav-icon')
+var fullMenu = document.querySelector('.nav-full')
+var lastFocusedElement = null
 
-function fixNav(setFixed) {
-  if (setFixed) {
-    nav.classList.add('nav-fixed')
-    navToggleAndLogo.forEach((el) => {
-      setVisibility(el, true, false)
-    })
-  } else {
-    nav.classList.remove('nav-fixed')
-    navToggleAndLogo.forEach((el) => {
-      setVisibility(el, false, false)
-    })
-  }
-  navFixed = setFixed
+function fixNav() {
+  nav.classList.add('nav-fixed')
+  navFixed = true
 }
 
-function toggleMenu() {
-  if (menuActive) {
-    $('.nav-icon').classList.remove('icon-active')
-  } else {
-    $('.nav-icon').classList.add('icon-active')
+function setMenu(open) {
+  menuActive = open
+  menuButton.setAttribute('aria-expanded', String(open))
+  menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
+  menuButton.classList.toggle('icon-active', open)
+  fullMenu.classList.toggle('active', open)
+  fullMenu.setAttribute('aria-hidden', String(!open))
+  fullMenu.inert = !open
+  document.documentElement.classList.toggle('menu-open', open)
+
+  if (open) {
+    lastFocusedElement = document.activeElement
+    const firstLink = fullMenu.querySelector('a')
+    if (firstLink) firstLink.focus()
+  } else if (lastFocusedElement) {
+    lastFocusedElement.focus()
   }
-  menuActive = !menuActive
 }
 
-// Full screen nav open on click
-$('.nav-icon').addEventListener('click', () => {
-  toggleMenu()
-  $$('.nav-full, main').forEach((el) => {
-    el.classList.toggle('active')
-  })
+menuButton.addEventListener('click', () => setMenu(!menuActive))
+
+fullMenu.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => setMenu(false))
 })
 
-// Full screen nav close on click
-$$('.nav-full a').forEach((links) => {
-  links.addEventListener('click', () => {
-    toggleMenu()
-    $$('.nav-full, main').forEach((el) => {
-      el.classList.toggle('active')
-    })
-  })
-})
-
-// Fix logoBig drawing over nav when click on logoSmall while nav open
-$('.logo').addEventListener('click', () => {
-  if ($('.nav-full').classList.contains('active')) {
-    toggleMenu()
-    $$('.nav-full, main').forEach((el) => {
-      el.classList.toggle('active')
-    })
-  }
-})
-
-// Disable scroll when full screen nav is open
-$('body').addEventListener('click', () => {
-  if ($('.nav-full').classList.contains('active')) {
-    $('html').style.overflowY = 'hidden'
-  } else {
-    $('html').style.overflowY = 'scroll'
-  }
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && menuActive) setMenu(false)
 })
