@@ -16,3 +16,31 @@ command = 'hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL'
 [context.production]
 [context.production.environment]
 HUGO_ENV = 'production'
+
+[[redirects]]
+from = '/papers/*'
+to = '/publications/'
+status = 301
+
+[[redirects]]
+from = '/knowledge_exchange/*'
+to = '/projects/'
+status = 301
+
+[[headers]]
+for = '/*'
+[headers.values]
+X-Content-Type-Options = 'nosniff'
+X-Frame-Options = 'DENY'
+Referrer-Policy = 'strict-origin-when-cross-origin'
+Permissions-Policy = 'camera=(), geolocation=(), microphone=()'
+
+[[headers]]
+for = '/*.css'
+[headers.values]
+Cache-Control = 'public, max-age=31536000, immutable'
+
+[[headers]]
+for = '/fonts/*'
+[headers.values]
+Cache-Control = 'public, max-age=31536000, immutable'
