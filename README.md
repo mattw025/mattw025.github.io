@@ -55,13 +55,21 @@ The generated `public/` and `resources/` directories are intentionally ignored.
 The theme is loaded through Hugo Modules, with the Git submodule used as a
 local replacement. This lets Hugo resolve the theme's compatible module
 dependencies while keeping the complete theme source pinned and inspectable in
-`themes/osprey-delight`. A small set of templates in `layouts/` adapts the
-latest tagged theme to Hugo 0.165.0. Keep those overrides narrow and review
-them whenever the theme is updated.
+`themes/osprey-delight`. Two compatibility templates in `layouts/partials/`
+adapt the theme's icon module to Hugo 0.165.0. The `layouts/index.html`
+override combines PR 64's modern Hugo fixes with the corrected partial lookup
+from upstream PR 63. Review these three overrides whenever the theme or icon
+module is updated.
 
 ## Updating the theme
 
-The site currently pins Osprey Delight v5.0.8. Test theme updates in a branch:
+The site pins Osprey Delight commit `824fbe9`, the tested head of upstream
+[PR 64](https://github.com/kdevo/osprey-delight/pull/64). It is newer than the
+v5.0.8 release and fixes Hugo APIs removed or deprecated in recent versions.
+Because the pull request is not yet released, keep the exact commit pinned.
+Move to a released descendant once upstream incorporates these changes.
+
+Test theme updates in a branch:
 
 ```sh
 git -C themes/osprey-delight fetch --tags

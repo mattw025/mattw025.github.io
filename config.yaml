@@ -10,7 +10,7 @@ enableEmoji: true
 
 # Use the pinned theme submodule as a local Hugo Module. We intentionally
 # declare its compatible dependencies here instead of loading the obsolete
-# release-notify dependency bundled in Osprey Delight v5.0.8.
+# release-notify dependency bundled with Osprey Delight.
 module:
   replacements:
     - github.com/kdevo/osprey-delight/v5 -> osprey-delight

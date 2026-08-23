@@ -2,11 +2,11 @@
 <html lang="{{ .Site.Language.Locale }}" class="no-js">
   {{ partial "head.html" . }}
   <body>
-    {{ partial "body-top.html" . }}
+    {{ partial "body-top" . }}
     <main>
       {{ range $i, $m := .Site.Menus.main -}}
-        {{ $partialPath := printf "partials/sections/%s.html" $m.Identifier }}
         {{ $partialName := printf "sections/%s.html" $m.Identifier }}
+        {{ $partialPath := printf "_partials/%s" $partialName }}
         {{ $page := $m.Page }}
         {{ if not $page -}}
           {{ $page = $.Site.GetPage $m.Identifier }}
@@ -25,6 +25,6 @@
       {{- end }}
     </main>
     {{ partial "footer.html" . }}
-    {{ partial "body-bottom.html" . }}
+    {{ partial "body-bottom" . }}
   </body>
 </html>
