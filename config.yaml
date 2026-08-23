@@ -21,14 +21,14 @@ params:
     name: "Matthias Meng Yan Wong"
     displayName: "Matthias Wong"
 
-  description: "Cultural historian of early modern Europe working across public history, digital humanities and environmental research at NUS"
+  description: "Matthias Wong is a cultural historian at NUS researching early modern temporality, digital history, Indigenous cultural geography and public history."
   theme: "origin"
   themeColor: "#f7f3ee"
 
   hero:
     role: "Senior Tutor, Department of History"
     institution: "National University of Singapore"
-    summary: "Cultural historian of early modern Europe working across public history, digital methods and environmental research."
+    summary: "Cultural historian of early modern Europe studying time, disruption and contested spaces through print culture, historical maps and public history."
 
   logoBig: "token_2.png"
   logoSmall: "world.png"
@@ -77,7 +77,7 @@ menu:
       identifier: "publications"
       url: "/#publications"
       weight: 30
-    - name: "Projects"
+    - name: "Projects & Engagement"
       identifier: "projects"
       url: "/#projects"
       weight: 40

@@ -9,6 +9,8 @@ title: Public and Environmental Histories
 weight: 30
 ---
 
-**Indigenous environmental research:** I am Associate Editor of [*Cambridge Elements in Indigenous Environmental Research*](https://www.cambridge.org/eier). It offers state-of-the-art interdisciplinary analyses within the rapidly growing area of Indigenous environmental research, and is aimed at researchers, policy-makers and NGOs. The series investigates how environmental issues and processes relate to Indigenous socio-economic, cultural and political dynamics. We invite submissions on topics like traditional ecological knowledge, resource management, food systems, and more. More details on the [Series page](https://www.cambridge.org/eier).
+My public and environmental work connects historical research with museums, Indigenous collections and questions of sustainability. With the American Museum & Gardens and the North American Native Museum in Zurich, I have worked on the interpretation of Indigenous materials and on digital connections between collections and source communities.
 
-**Sustainability in orbital space:** I am currently exploring discourses of sustainability in orbital space, particularly around our memory of space debris incidents including the 1978 de-orbiting of Kosmos 954 and the introduction of Hydrazine into Baffin Bay by European space launches in the 2010s.
+I am Associate Editor of [*Cambridge Elements in Indigenous Environmental Research*](https://www.cambridge.org/core/publications/elements/elements-in-indigenous-environmental-research). The series publishes interdisciplinary work on relationships between environmental change and Indigenous social, cultural and political life.
+
+I have also examined the social and cultural dimensions of sustainability in orbital space. This work includes a university consortium project on how UK space-sector organisations can assess the wider effects of their activities, alongside research on the public memory of space debris incidents.
