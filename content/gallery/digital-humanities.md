@@ -1,9 +1,11 @@
 ---
-alt: Historical Maps and Digital Methods
+alt: Close view of an antique map of eastern North America
 color: '#2F6B68'
-image: computer2.png
-imageDecorative: true
-imageStyle: icon
+image: alex-boyd-HA0Rgl-ISko-unsplash.jpg
+imageCredit: "Photo: [Alex Boyd](https://unsplash.com/photos/HA0Rgl-ISko?utm_source=mattwong.co.uk&utm_medium=referral) on Unsplash"
+imageDecorative: false
+imagePosition: center
+imageStyle: photo
 title: Historical Maps and Digital Methods
 weight: 20
 ---

@@ -281,7 +281,7 @@ main > section:nth-child(even) {
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  min-height: 12rem;
+  height: 12rem;
   background: var(--card-accent, var(--site-accent));
 }
 
@@ -459,7 +459,7 @@ main > section:nth-child(even) {
   }
 
   .research-card__image {
-    min-height: 9rem;
+    height: 10rem;
   }
 
   .about .container,

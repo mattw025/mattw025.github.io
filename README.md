@@ -54,13 +54,12 @@ configured to produce portable Markdown rather than a parallel HTML source.
 
 The home-page order and navigation labels are defined in `config.yaml`.
 
-Each research card takes its image, accent colour, alternative text, and order
-from the corresponding file in `content/gallery/`. The current line drawings
-are decorative, so `imageDecorative: true` keeps them out of the accessibility
-tree. Images live in `assets/`, where Hugo can resize and optimise them.
+Each research card takes its image, accent colour, alternative text, credit,
+crop position, and order from the corresponding file in `content/gallery/`.
+Images live in `assets/`, where Hugo can resize and optimise them.
 
-To replace a line drawing with a project photograph or historical source image,
-upload the new file to `assets/` and update the relevant card front matter:
+To add or replace a project photograph or historical source image, upload the
+new file to `assets/` and update the relevant card front matter:
 
 ```yaml
 alt: "A concise description of the image"
