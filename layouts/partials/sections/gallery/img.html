@@ -1,0 +1,15 @@
+{{/*
+  Use native lazy loading for research-card images. The theme's older LQIP
+  renderer leaves its 16 px WebP source selected when paired with the simple
+  resizer, so photographic cards never advance beyond the blurred placeholder.
+*/}}
+{{ partial "lazyimg" (dict
+    "img" .Params.image
+    "maxsize" (default "600x" site.Params.Image.Gallery.resize)
+    "responsivesizes" (slice "420x" "600x")
+    "resizeoptions" (default "q90 MitchellNetravali" site.Params.Image.Gallery.resizeOptions)
+    "alt" (default .Params.title .Params.alt)
+    "class" ""
+    "renderer" "native"
+    "resizer" "responsive"
+) }}
