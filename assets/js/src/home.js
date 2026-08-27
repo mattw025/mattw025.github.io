@@ -22,44 +22,4 @@
 
   updateActiveNavigation()
   window.addEventListener('scroll', () => requestAnimationFrame(updateActiveNavigation), { passive: true })
-
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  const heroItems = [...document.querySelectorAll('.site-hero__content, .site-hero__portrait-wrap')]
-  const revealItems = [...document.querySelectorAll('main > section:not(.gallery) > .container, .section-heading, .research-card')]
-
-  if (!reducedMotion) {
-    heroItems.forEach((item, index) => {
-      item.classList.add('reveal-on-scroll')
-      item.style.setProperty('--reveal-delay', `${index * 130}ms`)
-    })
-
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      heroItems.forEach((item) => item.classList.add('is-revealed'))
-    }))
-  }
-
-  if ('IntersectionObserver' in window && !reducedMotion) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return
-        entry.target.classList.add('is-revealed')
-        observer.unobserve(entry.target)
-      })
-    }, { rootMargin: '0px 0px -7% 0px', threshold: 0.12 })
-
-    let cardIndex = 0
-    revealItems.forEach((item) => {
-      item.classList.add('reveal-on-scroll')
-      if (item.classList.contains('research-card')) {
-        item.style.setProperty('--reveal-delay', `${(cardIndex % 3) * 90}ms`)
-        cardIndex += 1
-      }
-    })
-
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      revealItems.forEach((item) => observer.observe(item))
-    }))
-  } else {
-    revealItems.forEach((item) => item.classList.add('is-revealed'))
-  }
 })()
