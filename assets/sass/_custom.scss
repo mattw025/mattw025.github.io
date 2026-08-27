@@ -8,7 +8,6 @@
   --site-tertiary: #66754c;
   --site-gold: #b4823d;
   --site-border: #d9d2c7;
-  scroll-padding-top: 5.5rem;
 }
 
 html {
@@ -69,10 +68,8 @@ h3 {
 .site-hero {
   position: relative;
   height: auto !important;
-  display: flex;
-  align-items: center;
-  min-height: 0;
-  padding: clamp(7.25rem, 12vh, 9rem) 1.5rem clamp(4.5rem, 9vh, 6.5rem);
+  min-height: 38rem;
+  padding: 6.5rem 1.5rem 4rem;
   overflow: hidden;
   isolation: isolate;
   background: var(--site-paper);
@@ -86,18 +83,9 @@ h3 {
   display: none;
 }
 
-.site-hero__inner {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(1.35rem, 3vh, 2rem);
-  align-items: center;
-  width: 100%;
-  max-width: 52rem;
-  margin: 0 auto;
-}
-
 .site-hero__content {
-  max-width: 44rem;
+  max-width: 56rem;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -168,9 +156,9 @@ h3 {
 
 .site-hero__portrait-wrap {
   position: relative;
-  width: 100%;
-  max-width: clamp(9rem, 20vh, 11rem);
-  margin: 0 auto;
+  width: 10rem;
+  max-width: 100%;
+  margin: 0 auto 1.5rem;
   padding: 0;
 }
 
@@ -613,7 +601,8 @@ main > section:nth-child(even) {
 
 @media (max-width: 52rem) {
   .site-hero {
-    padding: 6.75rem 1.5rem 4rem;
+    min-height: 0;
+    padding: 6.5rem 1.5rem 4rem;
   }
 
   .site-hero h1 {
@@ -631,10 +620,6 @@ main > section:nth-child(even) {
 }
 
 @media (max-width: 47.99em) {
-  :root {
-    scroll-padding-top: 4.5rem;
-  }
-
   .site-nav .nav-toggle button {
     display: inline-flex;
   }
@@ -648,7 +633,7 @@ main > section:nth-child(even) {
   }
 
   .site-hero {
-    padding: 6.25rem 1.25rem 3.5rem;
+    padding: 6rem 1.25rem 3.5rem;
   }
 
   .site-hero h1 {
@@ -659,9 +644,7 @@ main > section:nth-child(even) {
   }
 
   .site-hero__portrait-wrap {
-    width: 38vw;
-    min-width: 8.5rem;
-    max-width: 10rem;
+    width: 9rem;
   }
 
   .site-hero__eyebrow {
