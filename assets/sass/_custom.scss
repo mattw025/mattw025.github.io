@@ -67,10 +67,12 @@ h3 {
 
 .site-hero {
   position: relative;
+  display: block;
+  flex: 0 0 auto;
   height: auto !important;
-  min-height: 38rem;
+  min-height: 0 !important;
   padding: 6.5rem 1.5rem 4rem;
-  overflow: hidden;
+  overflow: visible;
   isolation: isolate;
   background: var(--site-paper);
 }
@@ -601,7 +603,6 @@ main > section:nth-child(even) {
 
 @media (max-width: 52rem) {
   .site-hero {
-    min-height: 0;
     padding: 6.5rem 1.5rem 4rem;
   }
 

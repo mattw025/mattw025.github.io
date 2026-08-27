@@ -6,8 +6,8 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 
 {{ if .IsHome }}
-  <header class="site-hero row middle-xs center-xs">
-    <div class="site-hero__content col-xs-12">
+  <header class="site-hero">
+    <div class="site-hero__content">
       <div class="site-hero__portrait-wrap">
         {{ with resources.Get .Site.Params.hero.portrait }}
           {{ $portrait := .Fill "720x900 Center webp q88" }}
