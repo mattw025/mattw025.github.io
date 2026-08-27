@@ -3,12 +3,14 @@
   <desc id="description">Cultural historian of early modern Europe at the National University of Singapore</desc>
   <rect width="1200" height="630" fill="#f4f0e9"/>
   <circle cx="868" cy="315" r="240" fill="#fffdf9" stroke="#d9d2c7" stroke-width="2"/>
-  <path d="M0 174h950M0 315h1045M0 456h878" fill="none" stroke="#2f6b68" stroke-width="2" opacity="0.24"/>
-  <path d="M868 0v630" fill="none" stroke="#a34f2b" stroke-width="3" opacity="0.28"/>
+  <path d="M570 102c145 0 156 137 298 213s146 213 332 213" fill="none" stroke="#a34f2b" stroke-width="5" opacity="0.2"/>
+  <path d="M570 528c145 0 156-137 298-213s146-213 332-213" fill="none" stroke="#2f6b68" stroke-width="5" opacity="0.2"/>
+  <path d="M540 315h660" fill="none" stroke="#66754c" stroke-width="5" opacity="0.2"/>
   <circle cx="868" cy="315" r="18" fill="#f4f0e9" stroke="#202a2b" stroke-width="4" opacity="0.85"/>
   <circle cx="144" cy="136" r="64" fill="#fffdf9" stroke="#202a2b" stroke-width="4"/>
-  <path d="M105 114h55M105 136h78M105 158h43" fill="none" stroke="#2f6b68" stroke-width="4"/>
-  <path d="M159 96v80" fill="none" stroke="#a34f2b" stroke-width="4"/>
+  <path d="M104 108c24 0 25 19 55 28s24 28 26 28" fill="none" stroke="#a34f2b" stroke-width="4"/>
+  <path d="M104 164c24 0 25-19 55-28s24-28 26-28" fill="none" stroke="#2f6b68" stroke-width="4"/>
+  <path d="M102 136h84" fill="none" stroke="#66754c" stroke-width="4"/>
   <circle cx="159" cy="136" r="9" fill="#fffdf9" stroke="#202a2b" stroke-width="4"/>
   <text x="80" y="298" fill="#202a2b" font-family="Georgia, 'Times New Roman', serif" font-size="88">Matthias Wong</text>
   <text x="84" y="370" fill="#202a2b" font-family="Arial, Helvetica, sans-serif" font-size="31">Cultural historian of rupture, time, and contested places</text>

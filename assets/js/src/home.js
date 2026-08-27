@@ -1,9 +1,10 @@
 (() => {
   const items = [...document.querySelectorAll('.nav-item')]
   const sections = [...document.querySelectorAll('main > section')]
+  const nav = document.querySelector('.site-nav')
 
   function updateActiveNavigation() {
-    const threshold = nav.offsetHeight + 80
+    const threshold = (nav?.offsetHeight || 0) + 80
     let activeIndex = -1
 
     sections.forEach((section, index) => {
@@ -22,19 +23,38 @@
   updateActiveNavigation()
   window.addEventListener('scroll', () => requestAnimationFrame(updateActiveNavigation), { passive: true })
 
-  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const revealItems = [...document.querySelectorAll('main > section, .research-card')]
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const heroItems = [...document.querySelectorAll('.site-hero__content, .site-hero__portrait-wrap')]
+  const revealItems = [...document.querySelectorAll('main > section:not(.gallery) > .container, .section-heading, .research-card')]
+
+  if (!reducedMotion) {
+    heroItems.forEach((item, index) => {
+      item.classList.add('reveal-on-scroll')
+      item.style.setProperty('--reveal-delay', `${index * 130}ms`)
+    })
+
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      heroItems.forEach((item) => item.classList.add('is-revealed'))
+    }))
+  }
+
+  if ('IntersectionObserver' in window && !reducedMotion) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return
         entry.target.classList.add('is-revealed')
         observer.unobserve(entry.target)
       })
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 })
+    }, { rootMargin: '0px 0px -7% 0px', threshold: 0.12 })
 
-    revealItems.forEach((item) => {
+    revealItems.forEach((item, index) => {
       item.classList.add('reveal-on-scroll')
+      if (item.classList.contains('research-card')) {
+        item.style.setProperty('--reveal-delay', `${(index % 3) * 90}ms`)
+      }
       observer.observe(item)
     })
+  } else {
+    revealItems.forEach((item) => item.classList.add('is-revealed'))
   }
 })()

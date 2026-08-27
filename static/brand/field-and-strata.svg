@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
-  <title id="title">Field and strata mark</title>
-  <desc id="desc">Layered lines within a circular field, crossed by a chronological datum and centred on a point of interpretation</desc>
-  <circle cx="64" cy="64" r="57" fill="#fffdf9" stroke="#202a2b" stroke-width="4"/>
-  <path d="M25 42h55M25 64h78M25 86h43" fill="none" stroke="#2f6b68" stroke-width="4" stroke-linecap="square"/>
-  <path d="M79 24v80" fill="none" stroke="#a34f2b" stroke-width="4"/>
-  <circle cx="79" cy="64" r="9" fill="#fffdf9" stroke="#202a2b" stroke-width="4"/>
-</svg>

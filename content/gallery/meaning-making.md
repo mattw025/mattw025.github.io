@@ -1,11 +1,12 @@
 ---
 alt: A seventeenth-century political assembly gathered in a panelled hall
-color: '#7C3F27'
+color: '#A34F2B'
 image: boston-public-library-jmtfl7PUEpk-unsplash.jpg
 imageCredit: "Image: [Boston Public Library](https://unsplash.com/photos/jmtfl7PUEpk?utm_source=mattwong.co.uk&utm_medium=referral) on Unsplash"
 imageDecorative: false
 imagePosition: center 62%
 imageStyle: photo
+strand: Political time
 title: Time, Crisis, and Political Imagination
 weight: 10
 ---

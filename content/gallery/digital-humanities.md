@@ -6,6 +6,7 @@ imageCredit: "Photo: [Alex Boyd](https://unsplash.com/photos/HA0Rgl-ISko?utm_sou
 imageDecorative: false
 imagePosition: center
 imageStyle: photo
+strand: Mapped place
 title: Historical Maps and Digital Methods
 weight: 20
 ---

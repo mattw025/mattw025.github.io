@@ -33,8 +33,13 @@ params:
     role: "Senior Tutor, Department of History"
     institution: "National University of Singapore"
     summary: "Cultural historian studying how people understand rupture, time, and contested places through early modern, digital, and public history."
+    portrait: "prof_pic.jpg"
+    highlights:
+      - "NUS Annual Teaching Excellence Award"
+      - "AHRC Peer Review College"
+      - "Cambridge Elements Associate Editor"
 
-  brandMark: "/brand/field-and-strata.svg"
+  brandMark: "/brand/confluence-mark.svg"
   opengraphImage: "social-card.png"
 
   enforceSinglePage: false

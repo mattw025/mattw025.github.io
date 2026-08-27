@@ -14,6 +14,7 @@
           {{ with $page.Params.imageCredit }}<span class="research-card__image-credit">{{ . | markdownify }}</span>{{ end }}
         </div>
         <div class="research-card__content">
+          {{ with $page.Params.strand }}<p class="research-card__strand">{{ . }}</p>{{ end }}
           <h2>{{ $page.Title }}</h2>
           {{ $page.Content }}
         </div>

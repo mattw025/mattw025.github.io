@@ -1,11 +1,12 @@
 ---
 alt: Long-exposure star trails circling above a dark forest
-color: '#637247'
+color: '#66754C'
 image: albert-stoynov-F7hwdjj0ccA-unsplash.jpg
 imageCredit: "Photo: [Albert Stoynov](https://unsplash.com/photos/F7hwdjj0ccA?utm_source=mattwong.co.uk&utm_medium=referral) on Unsplash"
 imageDecorative: false
 imagePosition: center 42%
 imageStyle: photo
+strand: Public worlds
 title: Public and Environmental Histories
 weight: 30
 ---

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Confluence mark</title>
+  <desc id="desc">Three distinct paths converge around a shared point before continuing outward</desc>
+  <circle cx="64" cy="64" r="57" fill="#fffdf9" stroke="#202a2b" stroke-width="4"/>
+  <path d="M20 30c24 0 25 24 44 34s20 34 44 34" fill="none" stroke="#a34f2b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M20 98c24 0 25-24 44-34s20-34 44-34" fill="none" stroke="#2f6b68" stroke-width="5" stroke-linecap="round"/>
+  <path d="M18 64h92" fill="none" stroke="#66754c" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="64" cy="64" r="10" fill="#fffdf9" stroke="#202a2b" stroke-width="4"/>
+</svg>
