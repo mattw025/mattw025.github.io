@@ -1,11 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title description">
   <title id="title">Matthias Wong</title>
-  <desc id="description">Cultural historian of early modern Europe at the National University of Singapore</desc>
-  <rect width="1200" height="630" fill="#f4f0e9"/>
-  <rect x="72" y="72" width="12" height="486" fill="#a34f2b"/>
-  <text x="126" y="178" fill="#5d6767" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="3">CULTURAL HISTORIAN OF EARLY MODERN EUROPE</text>
-  <text x="120" y="310" fill="#202525" font-family="Georgia, 'Times New Roman', serif" font-size="92">Matthias Wong</text>
-  <text x="124" y="390" fill="#202525" font-family="Arial, Helvetica, sans-serif" font-size="34">Senior Tutor, Department of History</text>
-  <text x="124" y="440" fill="#5d6767" font-family="Arial, Helvetica, sans-serif" font-size="30">National University of Singapore</text>
-  <text x="124" y="526" fill="#7c3f27" font-family="Arial, Helvetica, sans-serif" font-size="26">mattwong.co.uk</text>
+  <desc id="description">Cultural historian of rupture, time, and place at the National University of Singapore</desc>
+  <rect width="1280" height="640" fill="#fffdf9"/>
+  <rect x="0" y="0" width="320" height="7" fill="#a34f2b"/>
+  <rect x="320" y="0" width="320" height="7" fill="#2f6b68"/>
+  <rect x="640" y="0" width="320" height="7" fill="#66754c"/>
+  <rect x="960" y="0" width="320" height="7" fill="#b4823d"/>
+  <g opacity="0.15">
+    <circle cx="1000" cy="322" r="220" fill="#f4f0e9" stroke="#202a2b" stroke-width="5"/>
+    <ellipse cx="1000" cy="322" rx="98" ry="220" fill="none" stroke="#2f6b68" stroke-width="8"/>
+    <ellipse cx="1000" cy="322" rx="220" ry="66" fill="none" stroke="#66754c" stroke-width="7"/>
+    <path d="M766 448 942 352M1058 292l176-96" fill="none" stroke="#a34f2b" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="1000" cy="322" r="24" fill="#b4823d" stroke="#fffdf9" stroke-width="7"/>
+  </g>
+  <g transform="translate(78 67)">
+    <circle cx="64" cy="64" r="47" fill="#fffdf9" stroke="#202a2b" stroke-width="4"/>
+    <ellipse cx="64" cy="64" rx="21" ry="47" fill="none" stroke="#2f6b68" stroke-width="3"/>
+    <ellipse cx="64" cy="64" rx="47" ry="14" fill="none" stroke="#66754c" stroke-width="2.5"/>
+    <path d="M13 91 52 70M76 57l39-21" fill="none" stroke="#a34f2b" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="64" cy="64" r="6" fill="#b4823d" stroke="#fffdf9" stroke-width="2"/>
+  </g>
+  <text x="78" y="310" fill="#202a2b" font-family="'Source Serif 4', 'Nimbus Roman', Georgia, serif" font-size="92" font-weight="500">Matthias Wong</text>
+  <text x="82" y="385" fill="#202a2b" font-family="'Source Sans 3', 'Nimbus Sans', Arial, sans-serif" font-size="31">Cultural historian of rupture, time, and place</text>
+  <text x="82" y="439" fill="#586665" font-family="'Source Sans 3', 'Nimbus Sans', Arial, sans-serif" font-size="25">Archives · maps · museums · public history</text>
+  <text x="82" y="535" fill="#7c3f27" font-family="'Source Sans 3', 'Nimbus Sans', Arial, sans-serif" font-size="24">National University of Singapore</text>
+  <text x="82" y="575" fill="#586665" font-family="'Source Sans 3', 'Nimbus Sans', Arial, sans-serif" font-size="22">mattwong.co.uk</text>
 </svg>

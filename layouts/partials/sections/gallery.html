@@ -1,19 +1,20 @@
 <div class="container research-container">
   <div class="section-heading">
     <h1>Research</h1>
-    <p>How people understand time, place and disruption, from seventeenth-century print culture to historical maps and public exhibitions.</p>
+    <p>A connected programme examining how people interpret rupture, make claims to place, and turn evidence into public knowledge.</p>
   </div>
   <div class="research-grid">
     {{ range $index, $page := sort (where site.RegularPages "Section" "gallery") "Weight" }}
-      <article class="research-card" id="{{ $page.File.BaseFileName }}">
+      <article class="research-card" id="{{ $page.File.BaseFileName }}"
+        style="{{ with $page.Params.color }}--card-accent: {{ . }};{{ end }}{{ with $page.Params.imagePosition }} --image-position: {{ . }};{{ end }}">
         <div class="research-card__image research-card__image--{{ default "icon" $page.Params.imageStyle }}"
           data-research-index="{{ printf "%02d" (add $index 1) }}"
-          style="{{ with $page.Params.color }}--card-accent: {{ . }};{{ end }}{{ with $page.Params.imagePosition }} --image-position: {{ . }};{{ end }}"
           {{ if $page.Params.imageDecorative }}aria-hidden="true"{{ end }}>
           {{ partial "sections/gallery/img" $page }}
           {{ with $page.Params.imageCredit }}<span class="research-card__image-credit">{{ . | markdownify }}</span>{{ end }}
         </div>
         <div class="research-card__content">
+          {{ with $page.Params.strand }}<p class="research-card__strand">{{ . }}</p>{{ end }}
           <h2>{{ $page.Title }}</h2>
           {{ $page.Content }}
         </div>

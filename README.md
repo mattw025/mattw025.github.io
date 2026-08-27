@@ -48,7 +48,7 @@ configured to produce portable Markdown rather than a parallel HTML source.
 
 - `content/about.md`: biographical overview;
 - `content/gallery/`: research areas shown as cards on the home page;
-- `content/publications.md`: research publications, methods contributions and dissertation;
+- `content/publications.md`: research publications, methods contributions, and dissertation;
 - `content/projects.md`: projects and public engagement;
 - `content/teaching.md`: teaching experience.
 
@@ -132,5 +132,5 @@ git -C themes/osprey-delight checkout <new-version>
 git add themes/osprey-delight
 ```
 
-Then run the local build and link check, inspect the Netlify Deploy Preview,
-and merge only after the generated site has been reviewed.
+Then run the local build and link check, inspect the generated site, and merge
+only after it has been reviewed.

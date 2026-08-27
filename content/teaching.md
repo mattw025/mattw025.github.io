@@ -2,7 +2,13 @@
 title: Teaching
 ---
 
-I teach European history, cultural astronomy, public and applied history, and digital history at the National University of Singapore. Across these areas, I help students connect historical questions with close source criticism and practical methods such as oral history, GIS and exhibition-making.
+I teach European history, cultural astronomy, public and applied history, and digital history at the National University of Singapore. Across these fields, I design learning around a common principle: students learn history most fully by making it. They test interpretations against evidence, choose methods suited to the question, and consider how arguments change when they address different audiences.
+
+## Recognition and pedagogic research
+
+My teaching received the NUS [Faculty Teaching Excellence Award](https://fass.nus.edu.sg/hist/staff-awards/) in 2024, followed in 2025 by both the Faculty Teaching Excellence Award and the university-level Annual Teaching Excellence Award.
+
+In 2025, I was awarded a two-year [**Teaching Enhancement Grant of SGD 25,000**](https://ctlt.nus.edu.sg/teg/learning-improvement-projects/past-teg-learning-improvement-projects/) as Principal Investigator for *Evaluating the impact of absolute grading on student learning and motivation*. The project examines how assessment structures shape learning behaviour and motivation, treating assessment itself as an object of evidence-led inquiry.
 
 ## Recent NUS courses
 
@@ -14,8 +20,8 @@ I teach European history, cultural astronomy, public and applied history, and di
 - HY5422 *Time and Space: Doing History with GIS*
 - HY5301 *Internship in History*
 
-## Learning through public history
+## Learning by doing history
 
-My public-history teaching gives students experience in researching for audiences beyond the classroom. In [*Beyond the Page*](https://alumni.nus.edu.sg/thealumnus/2025/06/04/beyond-the-page/), students conducted oral-history interviews, worked with departmental archives and developed an exhibition for NUS Central Library.
+My public- and digital-history teaching gives students experience of producing knowledge for audiences beyond the classroom. In [*Beyond the Page*](https://alumni.nus.edu.sg/thealumnus/2025/06/04/beyond-the-page/), students conducted oral-history interviews, worked with departmental archives, and developed an exhibition for NUS Central Library. The project asked them to interpret personal memory as evidence and to create historical work that could speak meaningfully to a broad public. Other courses introduce spatial analysis, digital source criticism, and the practical decisions involved in communicating historical evidence.
 
-Before joining NUS, I taught seminars on temporality and gender for History undergraduates at the University of Cambridge, as well as postgraduate workshops on research development and presentation. At the University of Hull, I designed training for graduate interns in digital storytelling, data visualisation and research practice.
+Before joining NUS, I taught seminars on temporality and gender for History undergraduates at the University of Cambridge, as well as postgraduate workshops on research development and presentation. At the University of Hull, I designed training for graduate interns in digital storytelling, data visualisation, and research practice.

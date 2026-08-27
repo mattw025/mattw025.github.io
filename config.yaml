@@ -1,4 +1,4 @@
-title: "Matthias Wong"
+title: "Matthias Wong | Historian"
 baseURL: "https://mattwong.co.uk/"
 locale: "en-GB"
 disableKinds: ["taxonomy", "term"]
@@ -25,18 +25,17 @@ params:
     name: "Matthias Meng Yan Wong"
     displayName: "Matthias Wong"
 
-  description: "Matthias Wong is a cultural historian at NUS researching early modern temporality, digital history, Indigenous cultural geography and public history."
+  description: "Matthias Wong is a cultural historian at NUS studying how people make sense of rupture, time, and place through archives, maps, museums, and public history."
   theme: "origin"
   themeColor: "#f7f3ee"
 
   hero:
     role: "Senior Tutor, Department of History"
     institution: "National University of Singapore"
-    summary: "Cultural historian of early modern Europe studying time, disruption and contested spaces through print culture, historical maps and public history."
+    summary: "Cultural historian studying how people make sense of rupture, time, and place through archives, maps, museums, and public history."
+    portrait: "prof_pic.jpg"
 
-  logoBig: "token_2.png"
-  logoSmall: "world.png"
-  favicon: "world.png"
+  brandMark: "/brand/ruptured-orbit.svg"
   opengraphImage: "social-card.png"
 
   enforceSinglePage: false
@@ -44,9 +43,6 @@ params:
   credit: true
 
   social:
-    - type: "fab twitter"
-      label: "Twitter"
-      url: "https://twitter.com/EMWmatt"
     - type: "fab orcid"
       label: "ORCID"
       url: "https://orcid.org/0000-0001-7574-5451"

@@ -1,9 +1,10 @@
 (() => {
   const items = [...document.querySelectorAll('.nav-item')]
   const sections = [...document.querySelectorAll('main > section')]
+  const nav = document.querySelector('.site-nav')
 
   function updateActiveNavigation() {
-    const threshold = nav.offsetHeight + 80
+    const threshold = (nav?.offsetHeight || 0) + 80
     let activeIndex = -1
 
     sections.forEach((section, index) => {
