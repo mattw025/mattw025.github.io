@@ -2,7 +2,7 @@
 title: Teaching
 ---
 
-I teach European history, cultural astronomy, public and applied history, and digital history at the National University of Singapore. Across these fields, I design learning around a common principle: students should learn to make and test historical arguments by working closely with evidence, methods, and audiences.
+I teach European history, cultural astronomy, public and applied history, and digital history at the National University of Singapore. Across these fields, I design learning around a common principle: students learn history most fully by making it. They test interpretations against evidence, choose methods suited to the question, and consider how arguments change when they address different audiences.
 
 ## Recognition and pedagogic research
 
@@ -22,6 +22,6 @@ In 2025, I was awarded a two-year [**Teaching Enhancement Grant of SGD 25,000**]
 
 ## Learning by doing history
 
-My public- and digital-history teaching gives students experience of producing knowledge for audiences beyond the classroom. In [*Beyond the Page*](https://alumni.nus.edu.sg/thealumnus/2025/06/04/beyond-the-page/), students conducted oral-history interviews, worked with departmental archives, and developed an exhibition for NUS Central Library. Other courses introduce spatial analysis, digital source criticism, and the practical decisions involved in communicating historical evidence.
+My public- and digital-history teaching gives students experience of producing knowledge for audiences beyond the classroom. In [*Beyond the Page*](https://alumni.nus.edu.sg/thealumnus/2025/06/04/beyond-the-page/), students conducted oral-history interviews, worked with departmental archives, and developed an exhibition for NUS Central Library. The project asked them to interpret personal memory as evidence and to create historical work that could speak meaningfully to a broad public. Other courses introduce spatial analysis, digital source criticism, and the practical decisions involved in communicating historical evidence.
 
 Before joining NUS, I taught seminars on temporality and gender for History undergraduates at the University of Cambridge, as well as postgraduate workshops on research development and presentation. At the University of Hull, I designed training for graduate interns in digital storytelling, data visualisation, and research practice.

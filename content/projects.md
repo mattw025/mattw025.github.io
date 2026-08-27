@@ -6,7 +6,7 @@ aliases:
 
 ## Beyond the Page
 
-In 2025, I helped lead [*Beyond the Page*](https://alumni.nus.edu.sg/thealumnus/2025/06/04/beyond-the-page/), a collaboration between the NUS Department of History and the NUS History Society. Students interviewed 12 History alumni, researched the Department’s archives, and translated their findings into an exhibition at NUS Central Library. The project joined oral-history training to practical experience in curation and public communication.
+In 2025, I helped lead [*Beyond the Page*](https://alumni.nus.edu.sg/thealumnus/2025/06/04/beyond-the-page/), a collaboration between the NUS Department of History and the NUS History Society. Students interviewed 12 History alumni, researched the Department’s archives, and translated their findings into an exhibition at NUS Central Library. The project treated history as a process of collective sense-making while giving students practical experience in oral history, curation, and public communication.
 
 ## Walking Through a Songline
 
