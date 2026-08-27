@@ -8,6 +8,13 @@
 {{ if .IsHome }}
   <header class="site-hero">
     <div class="site-hero__inner">
+      <div class="site-hero__portrait-wrap">
+        {{ with resources.Get .Site.Params.hero.portrait }}
+          {{ $portrait := .Fill "720x900 Center webp q88" }}
+          <img class="site-hero__portrait" src="{{ $portrait.RelPermalink }}" width="720" height="900"
+            alt="Portrait of Matthias Wong" fetchpriority="high">
+        {{ end }}
+      </div>
       <div class="site-hero__content">
         <p class="site-hero__eyebrow">History across time, place, and public life</p>
         <h1>{{ .Site.Params.author.displayName }}</h1>
@@ -15,13 +22,6 @@
         <p class="site-hero__institution">{{ .Site.Params.hero.institution }}</p>
         <p class="site-hero__summary">{{ .Site.Params.hero.summary }}</p>
         <a class="site-hero__link" href="#research">Explore research</a>
-      </div>
-      <div class="site-hero__portrait-wrap">
-        {{ with resources.Get .Site.Params.hero.portrait }}
-          {{ $portrait := .Fill "720x900 Center webp q88" }}
-          <img class="site-hero__portrait" src="{{ $portrait.RelPermalink }}" width="720" height="900"
-            alt="Portrait of Matthias Wong" fetchpriority="high">
-        {{ end }}
       </div>
     </div>
   </header>

@@ -69,9 +69,11 @@ h3 {
 .site-hero {
   position: relative;
   height: auto !important;
-  min-height: 0;
-  padding: clamp(7rem, 11vh, 8rem) clamp(1.5rem, 4vw, 3rem) clamp(4rem, 7vh, 5rem);
-  overflow: visible;
+  display: flex;
+  align-items: center;
+  min-height: calc(100svh - 4.5rem);
+  padding: 7rem 1.5rem 4rem;
+  overflow: hidden;
   isolation: isolate;
   background: var(--site-paper);
 }
@@ -85,18 +87,18 @@ h3 {
 }
 
 .site-hero__inner {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) clamp(14rem, 23vw, 18rem);
-  gap: clamp(2.5rem, 6vw, 4.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
   align-items: center;
   width: 100%;
-  max-width: 64rem;
+  max-width: 52rem;
   margin: 0 auto;
 }
 
 .site-hero__content {
-  max-width: 43rem;
-  text-align: left;
+  max-width: 48rem;
+  text-align: center;
 }
 
 .site-hero__eyebrow {
@@ -112,7 +114,7 @@ h3 {
   max-width: none;
   margin-bottom: 0.75rem;
   color: var(--site-ink);
-  font-size: clamp(3.4rem, 6vw, 5rem);
+  font-size: clamp(3rem, 7vw, 4.8rem);
   letter-spacing: -0.045em;
   line-height: 0.92;
   white-space: normal;
@@ -132,8 +134,8 @@ h3 {
 .site-hero__summary {
   max-width: 39rem;
   margin-bottom: 1.5rem;
-  padding-left: 1rem;
-  border-left: 3px solid var(--site-secondary);
+  margin-right: auto;
+  margin-left: auto;
   font-size: clamp(1rem, 1.8vw, 1.16rem);
   line-height: 1.7;
 }
@@ -165,7 +167,7 @@ h3 {
 .site-hero__portrait-wrap {
   position: relative;
   width: 100%;
-  max-width: 18rem;
+  max-width: 11rem;
   margin: 0 auto;
   padding: 0;
 }
@@ -178,9 +180,9 @@ h3 {
 }
 
 .site-hero__portrait-wrap::before {
-  inset: -0.65rem -0.65rem 0.65rem 0.65rem;
-  border: 1px solid rgba(47, 107, 104, 0.65);
-  border-radius: 12rem 12rem 0.3rem 0.3rem;
+  inset: -0.4rem;
+  border: 1px solid rgba(47, 107, 104, 0.6);
+  border-radius: 50%;
 }
 
 .site-hero__portrait-wrap::after {
@@ -190,8 +192,8 @@ h3 {
 .site-hero__portrait {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
-  border-radius: 11rem 11rem 0.2rem 0.2rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 1rem 2.5rem rgba(32, 42, 43, 0.13);
 }
@@ -265,7 +267,6 @@ main > section {
   position: relative;
   border-bottom: 1px solid var(--site-border);
   background: var(--site-paper);
-  scroll-margin-top: 4.5rem;
 }
 
 main > section:nth-child(even) {
@@ -536,10 +537,10 @@ main > section:nth-child(even) {
 
 #teaching li {
   margin: 0;
-  padding: 0.75rem 0.9rem 0.75rem 1.9rem;
+  padding: 0.75rem 0.9rem;
   border: 1px solid var(--site-border);
   background: rgba(255, 253, 249, 0.72);
-  list-style-position: inside;
+  list-style: none;
 }
 
 .standalone-page {
@@ -610,26 +611,12 @@ main > section:nth-child(even) {
 
 @media (max-width: 52rem) {
   .site-hero {
-    padding: 7.25rem 1.6rem 4.5rem;
-  }
-
-  .site-hero__inner {
-    grid-template-columns: 1fr;
-    gap: 3.25rem;
-  }
-
-  .site-hero__content {
-    max-width: 42rem;
+    padding: 7rem 1.5rem 4rem;
   }
 
   .site-hero h1 {
     max-width: 10ch;
     white-space: normal;
-  }
-
-  .site-hero__portrait-wrap {
-    width: 72vw;
-    max-width: 18rem;
   }
 
   .site-hero::before {
