@@ -659,8 +659,9 @@ main > section:nth-child(even) {
   }
 
   .site-hero__portrait-wrap {
-    width: min(38vw, 10rem);
+    width: 38vw;
     min-width: 8.5rem;
+    max-width: 10rem;
   }
 
   .site-hero__eyebrow {
