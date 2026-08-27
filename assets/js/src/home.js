@@ -47,13 +47,18 @@
       })
     }, { rootMargin: '0px 0px -7% 0px', threshold: 0.12 })
 
-    revealItems.forEach((item, index) => {
+    let cardIndex = 0
+    revealItems.forEach((item) => {
       item.classList.add('reveal-on-scroll')
       if (item.classList.contains('research-card')) {
-        item.style.setProperty('--reveal-delay', `${(index % 3) * 90}ms`)
+        item.style.setProperty('--reveal-delay', `${(cardIndex % 3) * 90}ms`)
+        cardIndex += 1
       }
-      observer.observe(item)
     })
+
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      revealItems.forEach((item) => observer.observe(item))
+    }))
   } else {
     revealItems.forEach((item) => item.classList.add('is-revealed'))
   }

@@ -15,9 +15,6 @@
         <p class="site-hero__institution">{{ .Site.Params.hero.institution }}</p>
         <p class="site-hero__summary">{{ .Site.Params.hero.summary }}</p>
         <a class="site-hero__link" href="#research">Explore research</a>
-        <ul class="site-hero__highlights" aria-label="Selected academic roles and recognition">
-          {{ range .Site.Params.hero.highlights }}<li>{{ . }}</li>{{ end }}
-        </ul>
       </div>
       <div class="site-hero__portrait-wrap">
         {{ with resources.Get .Site.Params.hero.portrait }}
@@ -25,7 +22,6 @@
           <img class="site-hero__portrait" src="{{ $portrait.RelPermalink }}" width="720" height="900"
             alt="Portrait of Matthias Wong" fetchpriority="high">
         {{ end }}
-        <span class="site-hero__portrait-caption">Historian · Teacher · Collaborator</span>
       </div>
     </div>
   </header>
