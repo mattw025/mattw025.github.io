@@ -1,2 +1,13 @@
 <link rel="icon" type="image/svg+xml" href="{{ .Site.Params.brandMark | relURL }}">
 <meta name="color-scheme" content="light">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Scratch.Get "title" }}">
+<meta name="twitter:description" content="{{ .Site.Params.description }}">
+{{ with .Site.Params.opengraphImage }}
+  {{ with resources.Get . }}
+    {{ $card := .Fill "1280x640 Lanczos Center" }}
+    {{ $card = slice $card | resources.Concat (printf "social-card%s" (path.Ext .)) }}
+    <meta name="twitter:image" content="{{ $card.Permalink }}">
+    <meta name="twitter:image:alt" content="Matthias Wong, cultural historian of rupture, time, and place">
+  {{ end }}
+{{ end }}
