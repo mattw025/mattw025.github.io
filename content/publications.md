@@ -6,6 +6,8 @@ aliases:
 
 ## Research publications
 
+My publications examine how political rupture changes historical understandings of time and monarchy. The current book project develops this work across a wider archive of seventeenth-century print.
+
 **Matthias Meng Yan Wong**. “Charles I’s Execution and the Destiny of Monarchy in Britain and Europe.” In *Monarchy, the Court, and the Provincial Elite in Early Modern Europe*, 54–72. Brill, 2024. [DOI](https://doi.org/10.1163/9789004694149_005)
 
 **Matthias Meng Yan Wong**. “A Pause in Time: History Writers and the Regicide of Charles I.” *Historical Research* 94, no. 266 (2021): 758–781. [Open-access article](https://doi.org/10.1093/hisres/htab029)

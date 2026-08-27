@@ -21,4 +21,20 @@
 
   updateActiveNavigation()
   window.addEventListener('scroll', () => requestAnimationFrame(updateActiveNavigation), { passive: true })
+
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealItems = [...document.querySelectorAll('main > section, .research-card')]
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return
+        entry.target.classList.add('is-revealed')
+        observer.unobserve(entry.target)
+      })
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 })
+
+    revealItems.forEach((item) => {
+      item.classList.add('reveal-on-scroll')
+      observer.observe(item)
+    })
+  }
 })()

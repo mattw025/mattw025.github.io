@@ -1,8 +1,9 @@
 {{ $buildOptions := dict "minify" true "target" "es2015" }}
-{{ $scripts := slice (resources.Get "js/src/base.js") (resources.Get "js/src/nav.js") }}
+{{ $scripts := slice (resources.Get "js/src/base.js") (resources.Get "js/src/nav.js") (resources.Get "js/src/contact.js") }}
 {{ if .IsHome }}
-  {{ $scripts = $scripts | append (resources.Get "js/src/home.js") }}
+  {{ $scripts = collections.Append (resources.Get "js/src/home.js") $scripts }}
 {{ end }}
-{{ $content := ($scripts | resources.Concat "js/site.js" | js.Build $buildOptions).Content }}
+{{ $targetPath := cond .IsHome "js/home-site.js" "js/site.js" }}
+{{ $content := ($scripts | resources.Concat $targetPath | js.Build $buildOptions).Content }}
 <script>{{ $content | safeJS }}</script>
 {{ partial "icon-data" . }}

@@ -2,10 +2,13 @@
   <title id="title">Matthias Wong</title>
   <desc id="description">Cultural historian of early modern Europe at the National University of Singapore</desc>
   <rect width="1200" height="630" fill="#f4f0e9"/>
-  <rect x="72" y="72" width="12" height="486" fill="#a34f2b"/>
-  <text x="126" y="178" fill="#5d6767" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="3">CULTURAL HISTORIAN OF EARLY MODERN EUROPE</text>
-  <text x="120" y="310" fill="#202525" font-family="Georgia, 'Times New Roman', serif" font-size="92">Matthias Wong</text>
-  <text x="124" y="390" fill="#202525" font-family="Arial, Helvetica, sans-serif" font-size="34">Senior Tutor, Department of History</text>
-  <text x="124" y="440" fill="#5d6767" font-family="Arial, Helvetica, sans-serif" font-size="30">National University of Singapore</text>
-  <text x="124" y="526" fill="#7c3f27" font-family="Arial, Helvetica, sans-serif" font-size="26">mattwong.co.uk</text>
+  <path d="M0 492h1200M864 0v630" fill="none" stroke="#d9d2c7" stroke-width="2"/>
+  <path d="M864 70v490M850 126h28M850 315h28M850 504h28" fill="none" stroke="#a34f2b" stroke-width="6"/>
+  <rect x="80" y="72" width="128" height="128" rx="2" fill="#fffdf9" stroke="#202a2b" stroke-width="4"/>
+  <path d="M97 160v-49l20 31 20-31v49m4-49 12 49 14-31 13 31 11-49" fill="none" stroke="#202a2b" stroke-width="6"/>
+  <path d="M192 92v88m-6-77h12m-12 33h12m-12 33h12" fill="none" stroke="#a34f2b" stroke-width="3"/>
+  <text x="80" y="298" fill="#202a2b" font-family="Georgia, 'Times New Roman', serif" font-size="88">Matthias Wong</text>
+  <text x="84" y="370" fill="#202a2b" font-family="Arial, Helvetica, sans-serif" font-size="31">Cultural historian of rupture, time and contested places</text>
+  <text x="84" y="430" fill="#5d6767" font-family="Arial, Helvetica, sans-serif" font-size="27">Early modern · Digital · Public history</text>
+  <text x="84" y="548" fill="#7c3f27" font-family="Arial, Helvetica, sans-serif" font-size="25">mattwong.co.uk</text>
 </svg>

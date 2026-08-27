@@ -6,7 +6,7 @@ aliases:
 
 ## Beyond the Page
 
-In 2025, I helped oversee [*Beyond the Page*](https://alumni.nus.edu.sg/thealumnus/2025/06/04/beyond-the-page/), a collaboration between the NUS Department of History and the NUS History Society. Students interviewed 12 History alumni, researched the Department’s archives and translated their findings into an exhibition at NUS Central Library. The project combined oral-history training with practical experience in curation and public communication.
+In 2025, I helped lead [*Beyond the Page*](https://alumni.nus.edu.sg/thealumnus/2025/06/04/beyond-the-page/), a collaboration between the NUS Department of History and the NUS History Society. Students interviewed 12 History alumni, researched the Department’s archives and translated their findings into an exhibition at NUS Central Library. The project joined oral-history training to practical experience in curation and public communication.
 
 ## Walking Through a Songline
 
@@ -14,7 +14,7 @@ I convened the Singapore iteration of [*Walking Through a Songline*](https://fas
 
 ## Indigenous collections and digital access
 
-My museum work has focused on interpretation, digital access and relationships between Indigenous collections and source communities. I led development work on [*Sharing Stories Across the Ocean*](https://treatiedspaces.com/sharing-stories-across-the-ocean-a-digital-enabled-strategy-for-european-indigenous-museum-collections/), an AHRC-supported collaboration with the North American Native Museum in Zurich. I have also worked with the American Museum & Gardens in Bath through the Treatied Spaces research programme.
+My museum work focuses on interpretation, digital access and relationships between Indigenous collections and source communities. I led development work on [*Sharing Stories Across the Ocean*](https://treatiedspaces.com/sharing-stories-across-the-ocean-a-digital-enabled-strategy-for-european-indigenous-museum-collections/), an AHRC-supported collaboration with the North American Native Museum in Zurich. I have also worked with the American Museum & Gardens in Bath through the Treatied Spaces research programme.
 
 ## Green Toolkit for a New Space Economy
 
@@ -24,7 +24,7 @@ The University of Hull awarded this work its Best Knowledge Exchange Postdoc pri
 
 ## Decolonising UK history provision in schools
 
-I have worked with Pearson Edexcel and AQA on history subject specifications and the review of GCSE textbooks. I have also co-authored evidence and contributed research expertise to the UK Parliament.
+I have worked with Pearson Edexcel and AQA on history subject specifications and the review of GCSE textbooks. I have also co-authored evidence and contributed research expertise to the UK Parliament, translating historical scholarship into practical recommendations for curriculum and policy audiences.
 
 ## Media and outreach
 
