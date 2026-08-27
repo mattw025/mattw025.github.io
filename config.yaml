@@ -25,16 +25,16 @@ params:
     name: "Matthias Meng Yan Wong"
     displayName: "Matthias Wong"
 
-  description: "Matthias Wong is a cultural historian at NUS researching time, political rupture and contested places through early modern, digital and public history."
+  description: "Matthias Wong is a cultural historian at NUS researching time, political rupture, and contested places through early modern, digital, and public history."
   theme: "origin"
   themeColor: "#f7f3ee"
 
   hero:
     role: "Senior Tutor, Department of History"
     institution: "National University of Singapore"
-    summary: "Cultural historian studying how people understand rupture, time and contested places through early modern, digital and public history."
+    summary: "Cultural historian studying how people understand rupture, time, and contested places through early modern, digital, and public history."
 
-  brandMark: "/brand/mw-mark.svg"
+  brandMark: "/brand/field-and-strata.svg"
   opengraphImage: "social-card.png"
 
   enforceSinglePage: false

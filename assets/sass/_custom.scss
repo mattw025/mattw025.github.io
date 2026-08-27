@@ -71,8 +71,10 @@ h3 {
   padding: 6.5rem 1.5rem 4rem;
   isolation: isolate;
   background:
-    linear-gradient(90deg, transparent calc(50% - 1px), rgba(47, 107, 104, 0.12) 50%, transparent calc(50% + 1px)),
-    linear-gradient(0deg, transparent calc(32% - 1px), rgba(163, 79, 43, 0.1) 32%, transparent calc(32% + 1px)),
+    linear-gradient(90deg, transparent calc(62% - 1px), rgba(163, 79, 43, 0.12) 62%, transparent calc(62% + 1px)),
+    linear-gradient(0deg, transparent calc(27% - 1px), rgba(47, 107, 104, 0.1) 27%, transparent calc(27% + 1px)),
+    linear-gradient(0deg, transparent calc(50% - 1px), rgba(47, 107, 104, 0.12) 50%, transparent calc(50% + 1px)),
+    linear-gradient(0deg, transparent calc(73% - 1px), rgba(47, 107, 104, 0.08) 73%, transparent calc(73% + 1px)),
     var(--site-wash);
 }
 
@@ -87,14 +89,14 @@ h3 {
 .site-hero::after {
   position: absolute;
   z-index: -1;
-  top: 14%;
+  top: 50%;
   left: 50%;
-  width: 88vw;
-  max-width: 62rem;
-  height: 72%;
+  width: 34rem;
+  height: 34rem;
   border: 1px solid rgba(47, 107, 104, 0.15);
+  border-radius: 50%;
   content: "";
-  transform: translateX(-50%);
+  transform: translate(-50%, -48%);
 }
 
 .site-hero__content {
@@ -268,9 +270,12 @@ main > section:nth-child(even) {
 .section-heading h1::after {
   display: inline-block;
   width: 3.75rem;
-  height: 0.18rem;
+  height: 0.62rem;
   margin-left: 1rem;
-  background: linear-gradient(90deg, var(--site-accent) 0 65%, var(--site-secondary) 65%);
+  background:
+    linear-gradient(var(--site-secondary), var(--site-secondary)) 0 0 / 72% 0.12rem no-repeat,
+    linear-gradient(var(--site-accent), var(--site-accent)) 0 50% / 100% 0.12rem no-repeat,
+    linear-gradient(var(--site-ink), var(--site-ink)) 0 100% / 48% 0.12rem no-repeat;
   content: "";
   vertical-align: 0.22em;
 }
@@ -358,7 +363,8 @@ main > section:nth-child(even) {
   inset: 0;
   content: "";
   background:
-    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.24), transparent 30%),
+    linear-gradient(0deg, transparent calc(32% - 1px), rgba(255, 255, 255, 0.18) 32%, transparent calc(32% + 1px)),
+    linear-gradient(0deg, transparent calc(68% - 1px), rgba(255, 255, 255, 0.13) 68%, transparent calc(68% + 1px)),
     linear-gradient(145deg, transparent 55%, rgba(0, 0, 0, 0.13));
 }
 
@@ -564,6 +570,11 @@ main > section:nth-child(even) {
     min-height: 41rem;
     height: auto;
     padding-top: 7rem;
+  }
+
+  .site-hero::after {
+    width: 21rem;
+    height: 21rem;
   }
 
   .research-card {
